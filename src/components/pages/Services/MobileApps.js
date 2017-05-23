@@ -1,116 +1,124 @@
-// import React from 'react';
-// import { FormattedMessage } from 'react-intl';
-// import { Link } from 'react-router';
-// import IntlStore from '../../../stores/Application/IntlStore';
-// //import Toggle from 'react-toggle'
-// 
-// export default class MobileApps extends React.Component {
-//   constructor(props) {
-//     super(props);
-// 
-//     this.handleToggleChange = this.handleToggleChange.bind(this);
-//     this.state = {
-//       isMonthly: false,
-//     };
-//   }
-//   handleToggleChange() {
-//     this.setState({ isMonthly: !this.state.isMonthly });
-//   }
-// 
-//   render() {
-//     const isMonthly = this.state.isMonthly;
-// 
-//     return (
-//       <div>
-//         <h1><FormattedMessage {...messages.mobileAppsTitle} /></h1>
-//         <p><FormattedMessage {...messages.mobileAppsContent} /></p>
-// 
-//         <label>
-//         <span>De por vida</span>
-//           <Toggle
-//             defaultChecked={this.state.isMonthly}
-//             icons={false}
-//             onChange={this.handleToggleChange} />
-//           <span>Mensual</span>
-//         </label>
-// 
-//         <div className="snip1265">
-// 
-//         <div className="plan">
-//           <header><i className="ion-ios-navigate-outline"></i>
-//             <h4 className="plan-title">Simple App</h4>
-//             {isMonthly ? (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice1} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//             ) : (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice5} /></span><span className="plan-type"></span></div>
-//             )}
-//           </header>
-//           <ul className="plan-features">
-//             <li><FormattedMessage {...messages.mobileAppsPack1Feature1} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack1Feature2} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack1Feature3} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack1Feature4} /></li>
-//           </ul>
-//           <div className="plan-select"><Link to="/services/mobileAppsPack1"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//         </div>
-// 
-//         <div className="plan">
-//           <header><i className="ion-ios-world"></i>
-//             <h4 className="plan-title">Online Store</h4>
-//             {isMonthly ? (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice2} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//             ) : (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice6} /></span><span className="plan-type"></span></div>
-//             )}
-//           </header>
-//           <ul className="plan-features">
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature1} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature2} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature3} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature4} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature5} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack2Feature6} /></li>
-//           </ul>
-//           <div className="plan-select"><Link to="/services/mobileAppsPack2"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//         </div>
-// 
-//         <div className="plan">
-//           <header><i className="ion-ios-people"></i>
-//             <h4 className="plan-title">Reservation</h4>
-//             {isMonthly ? (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice3} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//             ) : (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice7} /></span><span className="plan-type"></span></div>
-//             )}
-//           </header>
-//           <ul className="plan-features">
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature1} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature2} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature3} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature4} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature5} /></li>
-//             <li><FormattedMessage {...messages.mobileAppsPack3Feature6} /></li>
-//           </ul>
-//           <div className="plan-select"><Link to="/services/mobileAppsPack3"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//         </div>
-// 
-//         <div className="plan">
-//           <header><i className="ion-ios-speedometer"></i>
-//             <h4 className="plan-title">Custom App</h4>
-//             {isMonthly ? (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice4} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//             ) : (
-//               <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.mobileAppsPrice8} /></span><span className="plan-type"></span></div>
-//             )}
-//           </header>
-//           <ul className="plan-features">
-//             <li><FormattedMessage {...messages.mobileAppsPack4Feature1} /></li>
-//           </ul>
-//           <div className="plan-select"><Link to="/services/mobileAppsPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//         </div>
-// 
-//         </div>
-//       </div>
-//     );
-//   }
-// }
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import { Link } from 'react-router';
+import IntlStore from '../../../stores/Application/IntlStore';
+//import Toggle from 'react-toggle'
+import intlData from './Services.intl';
+
+export default class MobileApps extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleToggleChange = this.handleToggleChange.bind(this);
+    this.state = {
+      isMonthly: false,
+    };
+  }
+  
+  static contextTypes = {
+      executeAction: React.PropTypes.func.isRequired,
+      getStore: React.PropTypes.func.isRequired
+  };
+  
+  handleToggleChange() {
+    this.setState({ isMonthly: !this.state.isMonthly });
+  }
+
+  render() {
+    const isMonthly = this.state.isMonthly;
+    let intlStore = this.context.getStore(IntlStore);
+    let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
+
+    return (
+      <div>
+        <h1><FormattedMessage message={intlStore.getMessage(intlData, 'mobileTitle')} locales={intlStore.getCurrentLocale()} /></h1>
+        <p><FormattedMessage message={intlStore.getMessage(intlData, 'mobileContent')} locales={intlStore.getCurrentLocale()} /></p>
+
+        <label>
+        <span>De por vida</span>
+  
+          <span>Mensual</span>
+        </label>
+
+
+        <div className="snip1265">
+
+          <div className="plan">
+            <header><i className="ion-ios-navigate-outline"></i>
+              <h4 className="plan-title">Landing Page</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice5')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice1')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/mobilePack1"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-world"></i>
+              <h4 className="plan-title">Admin</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice6')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice2')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/mobilePack2"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-people"></i>
+              <h4 className="plan-title">Online Store</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice7')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice3')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/mobilePack3"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-speedometer"></i>
+              <h4 className="plan-title">Custom Mobile</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice8')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice4')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/mobilePack4"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+          </div>
+
+        </div>
+      </div>
+    );
+  }
+}
+

@@ -1,87 +1,124 @@
-// import React from 'react';
-// import { FormattedMessage } from 'react-intl';
-// import { Link } from 'react-router';
-// import IntlStore from '../../../stores/Application/IntlStore';
-// //import Toggle from 'react-toggle'
-// 
-// export default class SocialMedia extends React.Component {
-//   constructor(props) {
-//     super(props);
-// 
-//     this.handleToggleChange = this.handleToggleChange.bind(this);
-//     this.state = {
-//       isMonthly: false,
-//     };
-//   }
-//   handleToggleChange() {
-//     this.setState({ isMonthly: !this.state.isMonthly });
-//   }
-// 
-//   render() {
-//     const isMonthly = this.state.isMonthly;
-// 
-//     return (
-//     <div>
-//       <h1><FormattedMessage {...messages.socialTitle} /></h1>
-//       <p><FormattedMessage {...messages.socialContent} /></p>
-//       <div className="snip1265">
-// 
-//       <div className="plan">
-//         <header><i className="ion-ios-navigate-outline"></i>
-//           <h4 className="plan-title">Package 1</h4>
-//           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice1} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//         </header>
-//         <ul className="plan-features">
-//         <li><FormattedMessage {...messages.socialPack1Feature1} /></li>
-//         <li><FormattedMessage {...messages.socialPack1Feature2} /></li>
-//         <li><FormattedMessage {...messages.socialPack1Feature3} /></li>
-//         <li><FormattedMessage {...messages.socialPack1Feature4} /></li>
-//         </ul>
-//         <div className="plan-select"><Link to="/services/socialPack1"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//       </div>
-// 
-//       <div className="plan">
-//         <header><i className="ion-ios-world"></i>
-//           <h4 className="plan-title">Package 2</h4>
-//           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice2} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//         </header>
-//         <ul className="plan-features">
-//           <li><FormattedMessage {...messages.socialPack2Feature1} /></li>
-//           <li><FormattedMessage {...messages.socialPack2Feature2} /></li>
-//           <li><FormattedMessage {...messages.socialPack2Feature3} /></li>
-//           <li><FormattedMessage {...messages.socialPack2Feature4} /></li>
-//         </ul>
-//         <div className="plan-select"><Link to="/services/socialPack2"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//       </div>
-// 
-//       <div className="plan">
-//         <header><i className="ion-ios-people"></i>
-//           <h4 className="plan-title">Package 3</h4>
-//           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice3} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//         </header>
-//         <ul className="plan-features">
-//           <li><FormattedMessage {...messages.socialPack3Feature1} /></li>
-//           <li><FormattedMessage {...messages.socialPack3Feature2} /></li>
-//           <li><FormattedMessage {...messages.socialPack3Feature3} /></li>
-//           <li><FormattedMessage {...messages.socialPack3Feature4} /></li>
-//         </ul>
-//         <div className="plan-select"><Link to="/services/socialPack3"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//       </div>
-// 
-//       <div className="plan">
-//         <header><i className="ion-ios-speedometer"></i>
-//           <h4 className="plan-title">Custom</h4>
-//           <div className="plan-cost"><span className="plan-price"><FormattedMessage {...messages.socialPrice4} /></span><span className="plan-type">/<FormattedMessage {...messages.month} /></span></div>
-//         </header>
-//         <ul className="plan-features">
-//           <li><FormattedMessage {...messages.socialPack4Feature1} /></li>
-//         </ul>
-//         <div className="plan-select"><Link to="/services/socialPack4"><FormattedMessage {...messages.selectPlan} /></Link></div>
-//       </div>
-// 
-//       </div>
-//     </div>
-//   );
-// }
-// }
-// 
+import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import { Link } from 'react-router';
+import IntlStore from '../../../stores/Application/IntlStore';
+//import Toggle from 'react-toggle'
+import intlData from './Services.intl';
+
+export default class SocialMedia extends React.Component {
+  constructor(props) {
+    super(props);
+
+    this.handleToggleChange = this.handleToggleChange.bind(this);
+    this.state = {
+      isMonthly: false,
+    };
+  }
+  
+  static contextTypes = {
+      executeAction: React.PropTypes.func.isRequired,
+      getStore: React.PropTypes.func.isRequired
+  };
+  
+  handleToggleChange() {
+    this.setState({ isMonthly: !this.state.isMonthly });
+  }
+
+  render() {
+    const isMonthly = this.state.isMonthly;
+    let intlStore = this.context.getStore(IntlStore);
+    let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
+
+    return (
+      <div>
+        <h1><FormattedMessage message={intlStore.getMessage(intlData, 'socialTitle')} locales={intlStore.getCurrentLocale()} /></h1>
+        <p><FormattedMessage message={intlStore.getMessage(intlData, 'socialContent')} locales={intlStore.getCurrentLocale()} /></p>
+
+        <label>
+        <span>De por vida</span>
+
+          <span>Mensual</span>
+        </label>
+
+
+        <div className="snip1265">
+
+          <div className="plan">
+            <header><i className="ion-ios-navigate-outline"></i>
+              <h4 className="plan-title">Landing Page</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice5')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice1')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/socialPack1"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-world"></i>
+              <h4 className="plan-title">Admin</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice6')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice2')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/socialPack2"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-people"></i>
+              <h4 className="plan-title">Online Store</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice7')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice3')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature1')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature2')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature3')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature4')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/socialPack3"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+          </div>
+
+          <div className="plan">
+            <header><i className="ion-ios-speedometer"></i>
+              <h4 className="plan-title">Custom Social</h4>
+              {isMonthly ? (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice8')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              ) : (
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'socialPrice4')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+              )}
+            </header>
+            <ul className="plan-features">
+              <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
+            </ul>
+            <div className="plan-select"><Link to="/services/socialPack4"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+          </div>
+
+        </div>
+      </div>
+    );
+  }
+  }
+
