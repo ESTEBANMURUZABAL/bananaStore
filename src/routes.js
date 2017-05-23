@@ -23,6 +23,7 @@ import Register from './components/pages/Account/Register';
 import RegisterConfirm from './components/pages/Account/RegisterConfirm';
 import Reset from './components/pages/Account/Reset';
 import ResetConfirm from './components/pages/Account/ResetConfirm';
+import ServicesPage from './components/pages/Services/ServicesPage';
 
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';
@@ -71,7 +72,7 @@ const routes = (
         <Route name="info" handler={InfoPage} />
         <Route name="articles" path="articles/?" handler={ArticlesListingPage} />
         
-        <Route name="servicios" handler={NotFound} />
+        <Route name="servicios" handler={ServicesPage} />
         <Route name="contacto" handler={NotFound} />
         <Route name="nosotros" handler={NotFound} />
 

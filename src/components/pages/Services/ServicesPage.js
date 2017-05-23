@@ -22,8 +22,7 @@ import fetchHomepageProducts from '../../../actions/Products/fetchHomepageProduc
 import ArticleSummary from '../../common/articles/ArticleSummary';
 import Carousel from '../../common/images/Carousel';
 import ProductList from '../../common/products/ProductList';
-import ServiceContainer from './ServiceContainer';
-import messages from './messages';
+
 
 // Translation data for this component
 import intlData from './Services.intl';
@@ -32,22 +31,8 @@ import intlData from './Services.intl';
  * Component.
  */
 class ServicesPage extends React.Component {
-    constructor(props) {
-      super(props);
-      this.handleClick = this.handleClick.bind(this);
-
-      this.state = {
-        activeIndex: 'Websites',
-      };
-    }
-
-    static contextTypes = {
-        getStore: React.PropTypes.func.isRequired
-    };
-
-    handleClick(index) {
-      this.setState({ activeIndex: index });
-    }
+    
+  
 
     //*** Required Data ***//
 
@@ -95,41 +80,14 @@ class ServicesPage extends React.Component {
     //*** Template ***//
 
       render() {
-        const Components = {
-          'Websites': Websites,
-          'SocialMedia': SocialMedia,
-          'MobileApps': MobileApps
-        };
-
-        const Component = Components[this.state.activeIndex];
-
-        //
-        // Helper methods & variables
-        //
-
-        let intlStore = this.context.getStore(IntlStore);
-
-        // Base route params
-        let routeParams = {locale: this.context.getStore(IntlStore).getCurrentLocale()};
-
-
+        
 
         //
         // Return
         //
         return (
           <div className="service-wrapper">
-            <Helmet
-              meta={[{ name: 'description', content: 'Services page' },
-            ]}/>
-            <div className="service-tabs-container">
-              <ServiceContainer index="Websites" isActive={this.state.activeIndex==='Websites'} onClick={this.handleClick.bind(this)}>website text</ServiceContainer>
-              <ServiceContainer index="SocialMedia" isActive={this.state.activeIndex==='SocialMedia'} onClick={this.handleClick.bind(this)}>social text</ServiceContainer>
-              <ServiceContainer index="MobileApps" isActive={this.state.activeIndex==='MobileApps'} onClick={this.handleClick.bind(this)}>mobile app text</ServiceContainer>
-            </div>
-            <div className="service-info-container">
-              <Component />
-            </div>
+          
           </div>
         );
     }
