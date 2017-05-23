@@ -22,7 +22,10 @@ import fetchHomepageProducts from '../../../actions/Products/fetchHomepageProduc
 import ArticleSummary from '../../common/articles/ArticleSummary';
 import Carousel from '../../common/images/Carousel';
 import ProductList from '../../common/products/ProductList';
-
+import Websites from './Websites';
+import SocialMedia from './SocialMedia';
+import MobileApps from './MobileApps';
+import ServiceContainer from './ServiceContainer';
 
 // Translation data for this component
 import intlData from './Services.intl';
@@ -30,33 +33,23 @@ import intlData from './Services.intl';
 /**
  * Component.
  */
-class ServicesPage extends React.Component {
-    
+export default class ServicesPage extends React.Component {
   
+    static contextTypes = {
+        executeAction: React.PropTypes.func.isRequired,
+        getStore: React.PropTypes.func.isRequired
+    };
 
-    //*** Required Data ***//
 
-    // static fetchData = function (context, params, query, done) {
-    //     async.parallel([
-    //         function (callback) {
-    //             context.executeAction(fetchContents, {tags: 'homepage'}, callback);
-    //         },
-    //         function (callback) {
-    //             context.executeAction(fetchHomepageProducts, {}, callback);
-    //         }
-    //     ], done);
-    // };
-
+    handleClick(index) {
+      this.setState({ activeIndex: index });
+    }
+  
     //*** Initial State ***//
 
-    // state = {
-    //     banners: this.context.getStore(ContentsListStore).getOrderedContentsOfType('banner', ['homepage'], true),
-    //     articles: this.context.getStore(ContentsListStore).getOrderedContentsOfType('article', ['homepage'], true),
-    //     collections: this.context.getStore(CollectionsStore).getOrderedCollections(['homepageFeatured'], true, 'homepageFeaturedOrder'),
-    //     featuredCategories: this.context.getStore(CollectionsStore).getCollections(['category', 'homepage']),
-    //     featuredCollections: this.context.getStore(CollectionsStore).getCollections(['collection', 'homepage']),
-    //     featuredProducts: this.context.getStore(ProductsHomepageStore).getProducts()
-    // };
+    state = {
+        activeIndex: 'Websites'
+    };
 
     //*** Component Lifecycle ***//
 
@@ -64,50 +57,50 @@ class ServicesPage extends React.Component {
 
         // Component styles
         require('./ServicesPage.scss');
+        this.handleClick = this.handleClick.bind(this);
     }
-
-    // componentWillReceiveProps(nextProps) {
-    //     this.setState({
-    //         banners: nextProps._banners,
-    //         articles: nextProps._articles,
-    //         collections: nextProps._collections,
-    //         featuredProducts: nextProps._featuredProducts,
-    //         featuredCategories: nextProps._featuredCategories,
-    //         featuredCollections: nextProps._featuredCollections
-    //     });
-    // }
 
     //*** Template ***//
 
-      render() {
-        
-
-        //
-        // Return
-        //
-        return (
-          <div className="service-wrapper">
-          
+    render() {
+      const Components = {
+        'Websites': Websites,
+        'SocialMedia': SocialMedia,
+        'MobileApps': MobileApps
+      };
+      
+      let intlStore = this.context.getStore(IntlStore);
+      let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
+      const Component = Components[this.state.activeIndex];
+    
+      
+      return (
+        <div className="service-wrapper">
+          <div className="service-tabs-container">
+            <ServiceContainer index="Websites" isActive={this.state.activeIndex==='Websites'} onClick={this.handleClick.bind(this)}>
+                <FormattedMessage
+                message={intlStore.getMessage(intlData, 'websitesTab')}
+                locales={intlStore.getCurrentLocale()} />
+            </ServiceContainer>
+            <ServiceContainer index="SocialMedia" isActive={this.state.activeIndex==='SocialMedia'} onClick={this.handleClick.bind(this)}>
+                <FormattedMessage
+                message={intlStore.getMessage(intlData, 'socialTab')}
+                locales={intlStore.getCurrentLocale()} />
+            </ServiceContainer>
+            <ServiceContainer index="MobileApps" isActive={this.state.activeIndex==='MobileApps'} onClick={this.handleClick.bind(this)}>
+                <FormattedMessage
+                message={intlStore.getMessage(intlData, 'mobileTab')}
+                locales={intlStore.getCurrentLocale()} />
+            </ServiceContainer>
           </div>
-        );
+          <div className="service-info-container">
+            <Component />
+          </div>
+        </div>
+      );
     }
 }
 
-/**
- * Flux
- */
-// Homepage = connectToStores(Homepage, [CollectionsStore, ProductsHomepageStore], (context) => {
-//     return {
-//         _banners: context.getStore(ContentsListStore).getOrderedContentsOfType('banner', ['homepage'], true),
-//         _articles: context.getStore(ContentsListStore).getOrderedContentsOfType('article', ['homepage'], true),
-//         _collections: context.getStore(CollectionsStore).getOrderedCollections(['homepageFeatured'], true, 'homepageFeaturedOrder'),
-//         _featuredCategories: context.getStore(CollectionsStore).getCollections(['category', 'homepage']),
-//         _featuredCollections: context.getStore(CollectionsStore).getCollections(['collection', 'homepage']),
-//         _featuredProducts: context.getStore(ProductsHomepageStore).getProducts()
-//     };
-// });
 
-/**
- * Export.
- */
-export default ServicesPage;
+
+
