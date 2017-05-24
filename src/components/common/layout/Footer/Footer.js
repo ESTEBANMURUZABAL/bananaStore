@@ -166,7 +166,7 @@ class Footer extends React.Component {
 
                     </div>
                     <div className="footer__copyright">
-                        <Text size="small">© {new Date().getFullYear()} Tienda 765</Text>
+                        <Text size="small">© {new Date().getFullYear()} BananaCatCo</Text>
                     </div>
                 </div>
             </div>

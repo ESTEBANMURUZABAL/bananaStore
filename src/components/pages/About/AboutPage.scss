@@ -1,0 +1,16 @@
+#about-container {
+  height:100vh;
+  width:100%;
+  background-color: #2A2C39;
+  position: relative;
+}
+
+.about-wrapper {
+  font: 200 30px 'Lato';
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: justify;
+  transform: translate(-50%, -50%)
+}

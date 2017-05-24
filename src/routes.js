@@ -23,7 +23,11 @@ import Register from './components/pages/Account/Register';
 import RegisterConfirm from './components/pages/Account/RegisterConfirm';
 import Reset from './components/pages/Account/Reset';
 import ResetConfirm from './components/pages/Account/ResetConfirm';
+
+//Menu tabs components
+import AboutPage from './components/pages/About/AboutPage';
 import ServicesPage from './components/pages/Services/ServicesPage';
+import ContactPage from './components/pages/Contact/ContactPage';
 
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';
@@ -73,8 +77,8 @@ const routes = (
         <Route name="articles" path="articles/?" handler={ArticlesListingPage} />
         
         <Route name="servicios" handler={ServicesPage} />
-        <Route name="contacto" handler={NotFound} />
-        <Route name="nosotros" handler={NotFound} />
+        <Route name="contacto" handler={ContactPage} />
+        <Route name="nosotros" handler={AboutPage} />
 
 
         <Route name="article" path="articles/:contentId/?" handler={ArticlePage} />

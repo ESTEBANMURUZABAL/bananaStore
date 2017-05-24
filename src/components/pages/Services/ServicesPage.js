@@ -7,21 +7,10 @@ import connectToStores from 'fluxible-addons-react/connectToStores';
 import {FormattedMessage} from 'react-intl';
 import {Link} from 'react-router';
 
-import {slugify} from '../../../utils/strings';
-
 // Flux
-import CollectionsStore from '../../../stores/Collections/CollectionsStore';
-import ContentsListStore from '../../../stores/Contents/ContentsListStore';
 import IntlStore from '../../../stores/Application/IntlStore';
-import ProductsHomepageStore from '../../../stores/Products/ProductsHomepageStore';
-
-import fetchContents from '../../../actions/Contents/fetchContents';
-import fetchHomepageProducts from '../../../actions/Products/fetchHomepageProducts';
 
 // Required components
-import ArticleSummary from '../../common/articles/ArticleSummary';
-import Carousel from '../../common/images/Carousel';
-import ProductList from '../../common/products/ProductList';
 import Websites from './Websites';
 import SocialMedia from './SocialMedia';
 import MobileApps from './MobileApps';
@@ -54,8 +43,6 @@ export default class ServicesPage extends React.Component {
     //*** Component Lifecycle ***//
 
     componentDidMount() {
-
-        // Component styles
         require('./ServicesPage.scss');
         this.handleClick = this.handleClick.bind(this);
     }
@@ -72,8 +59,7 @@ export default class ServicesPage extends React.Component {
       let intlStore = this.context.getStore(IntlStore);
       let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
       const Component = Components[this.state.activeIndex];
-    
-      
+          
       return (
         <div className="service-wrapper">
           <div className="service-tabs-container">
