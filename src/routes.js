@@ -29,6 +29,12 @@ import AboutPage from './components/pages/About/AboutPage';
 import ServicesPage from './components/pages/Services/ServicesPage';
 import ContactPage from './components/pages/Contact/ContactPage';
 
+//Select page components
+import SelectAdminPage from './components/pages/SelectPage/SelectAdminPage';
+import SelectEcommercePage from './components/pages/SelectPage/SelectEcommercePage';
+import SelectLandingPage from './components/pages/SelectPage/SelectLandingPage';
+import SelectCustomPage from './components/pages/SelectPage/SelectCustomPage';
+  
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';
 
@@ -80,7 +86,11 @@ const routes = (
         <Route name="contacto" handler={ContactPage} />
         <Route name="nosotros" handler={AboutPage} />
 
-
+        <Route name="select-admin-page" path="select-admin-page" handler={SelectAdminPage} />
+        <Route name="select-custom-page" path="sselect-custom-page" handler={SelectCustomPage} />
+        <Route name="select-ecommerce-page" path="select-ecommerce-page" handler={SelectEcommercePage} />
+        <Route name="select-landing-page" path="select-landing-page" handler={SelectLandingPage} />
+        
         <Route name="article" path="articles/:contentId/?" handler={ArticlePage} />
         <Route name="article-slug" path="articles/:contentId/:contentSlug/?" handler={ArticlePage} />
         <Route name="adm" handler={Admin}>
