@@ -21,11 +21,10 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
 
     return (
       <section id="select-page">
-          <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Custom Page Pack<FormattedMessage message={intlStore.getMessage(intlData, 'string2')} locales={intlStore.getCurrentLocale()} /></div>
+          <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Custom Page Pack</div>
           <div className="select-page-wrapper">
 
-            <div className="direct-contact-container">
-            </div>
+        
                 
             <div className="subtitle-text"></div>
             <ul className="contact-list">

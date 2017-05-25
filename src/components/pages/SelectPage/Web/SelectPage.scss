@@ -45,7 +45,7 @@ hr {
 /////
 /* Begin Left Contact Page */
 .form-horizontal {
-  float: right;
+  position: absolute;
   max-width: 400px;
   font-family: 'Lato';
   font-weight: 200;
@@ -184,6 +184,10 @@ button, input, optgroup, select, textarea {
 .direct-contact-container {
   max-width: 400px;
   float: left;
+}
+
+.direct-contact-container-custom {
+  max-width: 400px;
 }
 
 /* Location, Phone, Email Section */

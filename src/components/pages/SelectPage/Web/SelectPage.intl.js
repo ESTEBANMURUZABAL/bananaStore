@@ -31,7 +31,7 @@ export default {
       webPack3Feature5: 'Unlimited views/pages',
       webPack3Feature6: '3 months support',
 
-      webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it',
+      webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
 
       socialTab: 'Social Media Management',
       socialTitle: 'Social Media',
@@ -56,7 +56,7 @@ export default {
       socialPack3Feature3: 'Design from templates',
       socialPack3Feature4: 'Custom text/colors',
 
-      socialPack4Feature1: 'Tell us your idea of a kickass social plan and what would you like to have in it',
+      socialPack4Feature1: 'Tell us your idea of a kickass social plan and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
 
       mobileTab: 'Applications for phones/tablets',
       mobileTitle: 'Mobile/Tablet application development',
@@ -84,7 +84,7 @@ export default {
       mobilePack3Feature5: 'Membership registration',
       mobilePack3Feature6: 'Unlimited views/pages',
 
-      mobilePack4Feature1: 'Tell us your idea of a kickass app and what would you like to have in it',
+      mobilePack4Feature1: 'Tell us your idea of a kickass app and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
     },
     es: {
       title: 'Contactanos',
@@ -117,7 +117,7 @@ export default {
       webPack3Feature5: 'Vistas/paginas ilimitadas',
       webPack3Feature6: '3 meses de soporte',
 
-      webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!',
+      webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!. Si es posible agregá tambien links de páginas web que tengas en mente para sacar ideas :)',
 
       socialTab: 'Manejo de redes sociales',
       socialTitle: 'Redes sociales',
@@ -145,7 +145,7 @@ export default {
       socialPack3Feature5: 'Google AdWords',
       socialPack3Feature6: '3 months support',
       
-      socialPack4Feature1: 'Contanos tu idea de plan social y que deberia tener/hacer!',
+      socialPack4Feature1: 'Contanos tu idea de plan social y que deberia tener/hacer!. Si es posible agregá tambien links de páginas web que tengas en mente para sacar ideas :)',
 
       mobileTab: 'Aplicaciones para Celulares/Tablets',
       mobileTitle: 'Desarrollo de aplicaciones para Celulares/Tablets',
