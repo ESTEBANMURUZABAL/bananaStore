@@ -97,7 +97,7 @@ class DesktopHeader extends React.Component {
                                     { isAdmin ?
                                         <div className="desktop-header__logout-button">
                                             <Link to='admin-panel' params={routeParams}>
-                                                <Text size="small">
+                                                <Text size="small" color="white">
                                                     <FormattedMessage
                                                         message={intlStore.getMessage(intlData, 'adminPanel')}
                                                         locales={intlStore.getCurrentLocale()} />
@@ -109,7 +109,7 @@ class DesktopHeader extends React.Component {
                                     }
                                     <div className="desktop-header__logout-button">
                                         <Link to='logout' params={routeParams}>
-                                            <Text size="small">
+                                            <Text size="small" color="white">
                                                 <FormattedMessage
                                                     message={intlStore.getMessage(intlData, 'logout')}
                                                     locales={intlStore.getCurrentLocale()} />
@@ -119,14 +119,14 @@ class DesktopHeader extends React.Component {
                                     <div className="desktop-header__account-button">
                                         <Link to='account' params={routeParams}>
                                             <div>
-                                                <Text size="small">
+                                                <Text size="small" color="white">
                                                     <FormattedMessage
                                                         message={intlStore.getMessage(intlData, 'hi')}
                                                         locales={intlStore.getCurrentLocale()} />, {this.state.user.name.split(' ')[0]}
                                                 </Text>
                                             </div>
                                             <div>
-                                                <Text size="small" weight="bold">
+                                                <Text size="small" weight="bold" color="white">
                                                     <FormattedMessage
                                                         message={intlStore.getMessage(intlData, 'myAccount')}
                                                         locales={intlStore.getCurrentLocale()} />
@@ -139,7 +139,7 @@ class DesktopHeader extends React.Component {
                                 <div className="desktop-header__account">
                                     <div className="desktop-header__register-button">
                                         <Link to='register' params={routeParams}>
-                                            <Text size="medium">
+                                            <Text size="medium" color="white">
                                                 <FormattedMessage
                                                     message={intlStore.getMessage(intlData, 'register')}
                                                     locales={intlStore.getCurrentLocale()} />
@@ -148,7 +148,7 @@ class DesktopHeader extends React.Component {
                                     </div>
                                     <div className="desktop-header__login-button">
                                         <Link to='login' params={routeParams}>
-                                            <Text size="medium">
+                                            <Text size="medium" color="white">
                                                 <FormattedMessage
                                                     message={intlStore.getMessage(intlData, 'login')}
                                                     locales={intlStore.getCurrentLocale()} />

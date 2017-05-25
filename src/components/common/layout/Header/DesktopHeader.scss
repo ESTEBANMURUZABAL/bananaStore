@@ -3,9 +3,7 @@
 .desktop-header {
     display: flex;
     justify-content: center;
-    border-top: solid 3px $color-primary;
-    border-bottom: solid 3px $color-primary;
-    background-color: #f4efe1;
+    background-color: #263238;
 }
 
 /*
@@ -43,6 +41,7 @@
     justify-content: flex-end;
     min-width: 350px;
     align-self: center;
+    color: white;
 }
 
 /*
@@ -50,7 +49,8 @@
  */
 
 .desktop-header__logo {
-    font: 300 25px 'Oswald', sans-serif;
+    font: 300 25px $font-family-heading, sans-serif;
+    color: white;
 }
 
 .desktop-header__logo-link {
@@ -100,7 +100,7 @@
 .desktop-header__account-button {
     padding: 10px;
     margin-left: 10px;
-    border: 1px solid red;
+    border: 1px solid white;
     border-radius: 3px;
 
     a {
@@ -112,6 +112,10 @@
             }
         }
     }
+}
+
+.white-text {
+    color: white;
 }
 
 .desktop-header__cart {

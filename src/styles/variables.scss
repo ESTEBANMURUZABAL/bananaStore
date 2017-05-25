@@ -1,7 +1,7 @@
 @import './mixins/breakpoints';
 
 $font-family-heading: 'Montserrat', sans-serif;
-$font-family-body: 'Open Sans', sans-serif;
+$font-family-body: Lato, sans-serif;
 $font-size-small: 13px;
 $font-size-medium: 16px;
 $font-size-large: 24px;
@@ -13,6 +13,7 @@ $font-weight-bold: 700;
 
 $color-heading: #5c433d;
 $color-body: rgb(85, 85, 85);
+$color-body-black: black;
 $color-primary: rgb(194, 0, 48);
 $color-primary-hover: #EC003B;
 $color-secondary: #f4efe1;

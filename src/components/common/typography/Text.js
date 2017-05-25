@@ -24,6 +24,7 @@ class Text extends React.Component {
         // Process CSS classes according to settings
         //
         let textClass = 'text';
+        
 
         // Size
         if (['small', 'medium', 'large'].indexOf(this.props.size) != -1) {
@@ -36,6 +37,11 @@ class Text extends React.Component {
         if (['lowercase', 'uppercase', 'capitalize'].indexOf(this.props.transform) != -1) {
             textClass += ` text-${this.props.transform}`;
         }
+        
+        // Color
+        if (['white'].indexOf(this.props.color) != -1) {
+            textClass += ` text-${this.props.color}`;
+        } 
 
         // Weight
         if (['normal', 'bold'].indexOf(this.props.weight) != -1) {
@@ -43,6 +49,7 @@ class Text extends React.Component {
         } else {
             textClass += ' text-normal';
         }
+        
 
         // Specified class name
         if (this.props.className) {

@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .service-wrapper {
   display: flex;
   flex: 1;
@@ -16,8 +18,10 @@
 .service-info-container {
   width: 82%;
   height: 100%;
-  padding: 0 3% 0 3%;
+  padding: 2% 3% 0 3%;
   text-align: left;
+  font-family: $font-family-body;
+  color: $color-body-black;
 }
 
 .active-service {
@@ -50,6 +54,21 @@
   }
 }
 
+.tab-title {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: black;
+  text-align: left;
+  font-size: 32px;
+  font-weight: bold;
+}
+ 
+.tab-content {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  padding: 1%;
+}
 
 .snip1265 {
   font-family: 'Raleway', Arial, sans-serif;

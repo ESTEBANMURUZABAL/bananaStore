@@ -36,15 +36,8 @@ export default class Websites extends React.Component {
 
     return (
       <div>
-        <h1><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} locales={intlStore.getCurrentLocale()} /></h1>
-        <p><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} locales={intlStore.getCurrentLocale()} /></p>
-
-        <label>
-        <span>De por vida</span>
-  
-          <span>Mensual</span>
-        </label>
-
+        <div className="tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} locales={intlStore.getCurrentLocale()} /></div>
+        <p className="tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} locales={intlStore.getCurrentLocale()} /></p>
 
         <div className="snip1265">
 
@@ -118,7 +111,7 @@ export default class Websites extends React.Component {
             <ul className="plan-features">
               <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
             </ul>
-            <div className="plan-select"><Link to="/services/webPack4"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+            <div className="plan-select"><Link to="/services/webPack4"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
         </div>

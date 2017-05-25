@@ -13,10 +13,10 @@
     letter-spacing: 1px;
 
     & > a {
-        color: $color-heading;
+        color: white;
         text-decoration: none;
         &:hover {
-            color: $color-primary;
+            color: #b6aaef;
         }
     }
 }
