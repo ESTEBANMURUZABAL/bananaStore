@@ -30,10 +30,10 @@ import ServicesPage from './components/pages/Services/ServicesPage';
 import ContactPage from './components/pages/Contact/ContactPage';
 
 //Select page components
-import SelectAdminPage from './components/pages/SelectPage/SelectAdminPage';
-import SelectEcommercePage from './components/pages/SelectPage/SelectEcommercePage';
-import SelectLandingPage from './components/pages/SelectPage/SelectLandingPage';
-import SelectCustomPage from './components/pages/SelectPage/SelectCustomPage';
+import SelectAdminPage from './components/pages/SelectPage/Web/SelectAdminPage';
+import SelectEcommercePage from './components/pages/SelectPage/Web/SelectEcommercePage';
+import SelectLandingPage from './components/pages/SelectPage/Web/SelectLandingPage';
+import SelectCustomPage from './components/pages/SelectPage/Web/SelectCustomPage';
   
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';

@@ -2,9 +2,9 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 // Translation data for this component
 import intlData from './SelectPage.intl';// Flux
-import IntlStore from '../../../stores/Application/IntlStore';
+import IntlStore from '../../../../stores/Application/IntlStore';
 
-export default class SelectCustomPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export default class SelectLandingPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
@@ -18,21 +18,24 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
   render() {
     let intlStore = this.context.getStore(IntlStore);
     let routeParams = {locale: intlStore.getCurrentLocale()}; 
-
+    
     return (
-      <section id="contact">
-          <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Custom Page Pack<FormattedMessage message={intlStore.getMessage(intlData, 'string2')} locales={intlStore.getCurrentLocale()} /></div>
-          <div className="contact-wrapper">
+      <section id="select-page">
+          <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Landing Page Pack<FormattedMessage message={intlStore.getMessage(intlData, 'string2')} locales={intlStore.getCurrentLocale()} /></div>
+          <div className="select-page-wrapper">
 
             <div className="direct-contact-container">
+            <div>
+                <div className="subtitle-text"><FormattedMessage message={intlStore.getMessage(intlData, 'subtitle')} /></div>
+                <ul className="contact-list">
+                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature1')} /></span></i></li>
+                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature2')} /></span></i></li>
+                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature3')} /></span></i></li>
+                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature4')} /></span></i></li>
+                </ul>
+              </div>
             </div>
-                
-            <div className="subtitle-text"></div>
-            <ul className="contact-list">
-                <li className="list-item"><i className="fa"><span className="contact-text"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} /></span></i></li>
-            </ul>
-            
-            
+
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
 
               <div className="form-group">

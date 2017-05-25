@@ -53,7 +53,7 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-landing-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
+            <div className="plan-select"><Link to="select-landing-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
 
           <div className="plan">
@@ -73,7 +73,7 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-admin-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="select-admin-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">
@@ -93,7 +93,7 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-ecommerce-page" params={routeParams}><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+            <div className="plan-select"><Link to="select-ecommerce-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
 
           <div className="plan">
@@ -108,7 +108,7 @@ export default class Websites extends React.Component {
             <ul className="plan-features">
               <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
             </ul>
-            <div className="plan-select"><Link to="/select-custom-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="select-custom-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
 
         </div>

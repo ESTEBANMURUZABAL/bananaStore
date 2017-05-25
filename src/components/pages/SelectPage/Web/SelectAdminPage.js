@@ -2,7 +2,7 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 // Translation data for this component
 import intlData from './SelectPage.intl';// Flux
-import IntlStore from '../../../stores/Application/IntlStore';
+import IntlStore from '../../../../stores/Application/IntlStore';
 
 export default class SelectAdminPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   
@@ -20,9 +20,9 @@ export default class SelectAdminPage extends React.Component { // eslint-disable
     let routeParams = {locale: intlStore.getCurrentLocale()}; 
     
     return (
-      <section id="contact">
+      <section id="select-page">
           <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Admin Page Pack<FormattedMessage message={intlStore.getMessage(intlData, 'string2')} locales={intlStore.getCurrentLocale()} /></div>
-          <div className="contact-wrapper">
+          <div className="select-page-wrapper">
 
             <div className="direct-contact-container">
             <div>
