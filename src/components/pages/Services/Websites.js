@@ -7,14 +7,10 @@ import connectToStores from 'fluxible-addons-react/connectToStores';
 import intlData from './Services.intl';
 
 export default class Websites extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.handleToggleChange = this.handleToggleChange.bind(this);
-    this.state = {
-      isMonthly: false,
-    };
-  }
+  state = {
+      isMonthly: false
+  };
   
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
@@ -27,6 +23,7 @@ export default class Websites extends React.Component {
   
   componentDidMount() {
       require('./ServicesPage.scss');
+      this.handleToggleChange = this.handleToggleChange.bind(this);
   }
 
   render() {
@@ -36,8 +33,8 @@ export default class Websites extends React.Component {
 
     return (
       <div>
-        <div className="tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} locales={intlStore.getCurrentLocale()} /></div>
-        <p className="tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} locales={intlStore.getCurrentLocale()} /></p>
+        <div className="tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} /></div>
+        <p className="tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} /></p>
 
         <div className="snip1265">
 
@@ -45,9 +42,9 @@ export default class Websites extends React.Component {
             <header><i className="ion-ios-navigate-outline"></i>
               <h4 className="plan-title">Landing Page</h4>
               {isMonthly ? (
-                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice5')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice5')} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} /></span><span className="plan-type"></span></div>
               ) : (
-                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice1')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice1')} /></span><span className="plan-type"></span></div>
               )}
             </header>
             <ul className="plan-features">
@@ -56,16 +53,16 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-landing-page"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="/select-landing-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
 
           <div className="plan">
             <header><i className="ion-ios-world"></i>
               <h4 className="plan-title">Admin</h4>
               {isMonthly ? (
-                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice6')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice6')} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} /></span><span className="plan-type"></span></div>
               ) : (
-                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice2')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
+                <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice2')} /></span><span className="plan-type"></span></div>
               )}
             </header>
             <ul className="plan-features">
@@ -76,7 +73,7 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-admin-page"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="/select-admin-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">
@@ -96,7 +93,7 @@ export default class Websites extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/select-ecommerce-page"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+            <div className="plan-select"><Link to="/select-ecommerce-page" params={routeParams}><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
           </div>
 
           <div className="plan">
@@ -111,7 +108,7 @@ export default class Websites extends React.Component {
             <ul className="plan-features">
               <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
             </ul>
-            <div className="plan-select"><Link to="/select-custom-page"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="/select-custom-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
         </div>

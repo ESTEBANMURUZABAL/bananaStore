@@ -6,19 +6,20 @@ import IntlStore from '../../../stores/Application/IntlStore';
 import intlData from './Services.intl';
 
 export default class SocialMedia extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.handleToggleChange = this.handleToggleChange.bind(this);
-    this.state = {
-      isMonthly: false,
-    };
-  }
+  
+  state = {
+      isMonthly: false
+  };
   
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
       getStore: React.PropTypes.func.isRequired
   };
+  
+  componentDidMount() {
+      require('./ServicesPage.scss');
+      this.handleToggleChange = this.handleToggleChange.bind(this);
+  }
   
   handleToggleChange() {
     this.setState({ isMonthly: !this.state.isMonthly });
@@ -51,7 +52,7 @@ export default class SocialMedia extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/socialPack1"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="/services/socialPack1" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">

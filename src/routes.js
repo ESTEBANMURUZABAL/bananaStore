@@ -87,7 +87,7 @@ const routes = (
         <Route name="nosotros" handler={AboutPage} />
 
         <Route name="select-admin-page" path="select-admin-page" handler={SelectAdminPage} />
-        <Route name="select-custom-page" path="sselect-custom-page" handler={SelectCustomPage} />
+        <Route name="select-custom-page" path="select-custom-page" handler={SelectCustomPage} />
         <Route name="select-ecommerce-page" path="select-ecommerce-page" handler={SelectEcommercePage} />
         <Route name="select-landing-page" path="select-landing-page" handler={SelectLandingPage} />
         
