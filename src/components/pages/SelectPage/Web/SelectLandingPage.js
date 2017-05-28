@@ -1,69 +1,132 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-// Translation data for this component
 import intlData from './SelectPage.intl';// Flux
 import IntlStore from '../../../../stores/Application/IntlStore';
 
 export default class SelectLandingPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
       getStore: React.PropTypes.func.isRequired
   };
-  
+
   componentDidMount() {
-      require('./SelectPage.scss');
+      require('./SelectPageLanding.scss');
   }
-  
+
   render() {
     let intlStore = this.context.getStore(IntlStore);
-    let routeParams = {locale: intlStore.getCurrentLocale()}; 
-    
+    let routeParams = {locale: intlStore.getCurrentLocale()};
+
     return (
-      <section id="select-page">
-          <div className="propusal-title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Landing Page Pack<FormattedMessage message={intlStore.getMessage(intlData, 'string2')} locales={intlStore.getCurrentLocale()} /></div>
-          <div className="select-page-wrapper">
+      <div className="select-page-wrapper">
 
-            <div className="direct-contact-container">
-            <div>
-                <div className="subtitle-text"><FormattedMessage message={intlStore.getMessage(intlData, 'subtitle')} /></div>
-                <ul className="contact-list">
-                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature1')} /></span></i></li>
-                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature2')} /></span></i></li>
-                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature3')} /></span></i></li>
-                  <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature4')} /></span></i></li>
-                </ul>
-              </div>
-            </div>
+        <div className="title-container">
 
-            <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
+        </div>
 
-              <div className="form-group">
-                <div className="col-sm-12">
-                  <input type="text" className="form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name"/>
-                </div>
-              </div>
-              <div className="form-group">
-                <div className="col-sm-12">
-                  <input type="numbers" className="form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone"/>
-                </div>
-              </div>
-              <div className="form-group">
-                <div className="col-sm-12">
-                  <input type="email" className="form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email"/>
-                </div>
-              </div>
-              <textarea className="form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'propousalMessage')} name="propousalMessage"></textarea>
-              <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                <div className="button">
-                  <i className="fa fa-paper-plane"></i><span className="send-text"><FormattedMessage message={intlStore.getMessage(intlData, 'send')} locales={intlStore.getCurrentLocale()} /></span>
-                </div>
-              </button>
-              <input type="hidden" name="_next" value="http://localhost:4000/contact" />
-            </form>
+        <div className="case-study-gallery">
 
+          <h1 className="title"><FormattedMessage message={intlStore.getMessage(intlData, 'string1')} locales={intlStore.getCurrentLocale()} /> Landing Page Pack</h1>
+        <div className="case-study study1">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
           </div>
-        </section>
+        </div>
+
+        <div className="case-study study2">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
+          </div>
+        </div>
+
+        <div className="case-study study3">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
+          </div>
+        </div>
+
+        <div className="case-study study4">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
+          </div>
+        </div>
+
+        <div className="case-study study5">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
+          </div>
+        </div>
+
+        <div className="case-study study6">
+        	<figure>
+        		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
+        	</figure>
+          <div className="case-study__overlay">
+          	<h2 className="case-study__title">Developing Hexxis</h2>
+            <a className="case-study__link" href="#">View Case Study</a>
+          </div>
+        </div>
+        </div>
+
+      </div>
     );
   }
 }
+
+// <div className="direct-contact-container">
+// <div>
+//     <div className="subtitle-text"><FormattedMessage message={intlStore.getMessage(intlData, 'subtitle')} /></div>
+//     <ul className="contact-list">
+//       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text place"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature1')} /></span></i></li>
+//       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text phone"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature2')} /></span></i></li>
+//       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature3')} /></span></i></li>
+//       <li className="list-item"><i className="fa fa-check-square fa-2x"><span className="contact-text gmail"><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Feature4')} /></span></i></li>
+//     </ul>
+//   </div>
+// </div>
+//
+// <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
+//
+//   <div className="form-group">
+//     <div className="col-sm-12">
+//       <input type="text" className="form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name"/>
+//     </div>
+//   </div>
+//   <div className="form-group">
+//     <div className="col-sm-12">
+//       <input type="numbers" className="form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone"/>
+//     </div>
+//   </div>
+//   <div className="form-group">
+//     <div className="col-sm-12">
+//       <input type="email" className="form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email"/>
+//     </div>
+//   </div>
+//   <textarea className="form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'propousalMessage')} name="propousalMessage"></textarea>
+//   <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+//     <div className="button">
+//       <i className="fa fa-paper-plane"></i><span className="send-text"><FormattedMessage message={intlStore.getMessage(intlData, 'send')} locales={intlStore.getCurrentLocale()} /></span>
+//     </div>
+//   </button>
+//   <input type="hidden" name="_next" value="http://localhost:4000/contact" />
+// </form>

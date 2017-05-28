@@ -4,7 +4,6 @@
   background-color: #2A2C39;
   overflow: hidden;
   padding-bottom: 200px;
-
 }
 
 .select-page-header {
@@ -22,6 +21,14 @@
   position: relative;
   max-width: 800px;
   align-content: space-between;
+}
+
+.propusal-title {
+  font: 400 25px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+  padding: 40px 0 40px 0;
+  text-align: center;
 }
 
 /////hr code
@@ -212,14 +219,6 @@ button, input, optgroup, select, textarea {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
-  text-align: center;
-}
-
-.propusal-title {
-  font: 400 25px 'Lato', sans-serif;
-  letter-spacing: 1.9px;
-  color: #bbb;
-  padding: 40px 0 40px 0;
   text-align: center;
 }
 
