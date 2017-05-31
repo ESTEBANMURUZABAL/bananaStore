@@ -10,13 +10,14 @@ export default {
       subtitle: 'Your package includes:',
       propousalMessage: 'COMMENTS AND INQUIRES',
       send: 'SEND',
-      
-      websitesTabpack1name: 'Landing Page',
+
+      webPack1Name: 'Landing Page',
       webPack1Feature1: 'Up to 10 views/pages',
       webPack1Feature2: '1 custom form',
       webPack1Feature3: 'Design from templates',
       webPack1Feature4: 'Custom text/colors',
 
+      webPack2Name: 'Auto-administrable page',
       webPack2Feature1: 'Unlimited views/pages',
       webPack2Feature2: 'Self-Editable content',
       webPack2Feature3: 'Custom design',
@@ -24,6 +25,7 @@ export default {
       webPack2Feature5: '2 custom form',
       webPack2Feature6: '1 month support',
 
+      webPack3Name: 'Online Store',
       webPack3Feature1: 'Up to 100 products',
       webPack3Feature2: 'Inventory management',
       webPack3Feature3: 'Membership registration',
@@ -31,6 +33,7 @@ export default {
       webPack3Feature5: 'Unlimited views/pages',
       webPack3Feature6: '3 months support',
 
+      webPack4Name: 'Custom Page',
       webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
 
       socialTab: 'Social Media Management',
@@ -40,22 +43,26 @@ export default {
       socialPrice2: 'USD 450',
       socialPrice3: 'USD 625',
       socialPrice4: 'USD ?',
-      
+
+      socialPack1Name: 'Landing Page',
       socialPack1Feature1: '5 tabs or views',
       socialPack1Feature2: '1 custom form',
       socialPack1Feature3: 'Design from templates',
       socialPack1Feature4: 'Custom text/colors',
-      
+
+      socialPack2Name: 'Landing Page',
       socialPack2Feature1: '5 tabs or views',
       socialPack2Feature2: '1 custom form',
       socialPack2Feature3: 'Design from templates',
       socialPack2Feature4: 'Custom text/colors',
-      
+
+      socialPack3Name: 'Landing Page',
       socialPack3Feature1: '5 tabs or views',
       socialPack3Feature2: '1 custom form',
       socialPack3Feature3: 'Design from templates',
       socialPack3Feature4: 'Custom text/colors',
 
+      socialPack4Name: 'Landing Page',
       socialPack4Feature1: 'Tell us your idea of a kickass social plan and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
 
       mobileTab: 'Applications for phones/tablets',
@@ -65,11 +72,14 @@ export default {
       mobilePrice2: 'USD 1100',
       mobilePrice3: 'USD 1000',
       mobilePrice4: 'USD ?',
+
+      mobilePack1Name: 'Landing Page',
       mobilePack1Feature1: 'Up to 10 views',
       mobilePack1Feature2: '1 custom form',
       mobilePack1Feature3: 'Design from templates',
       mobilePack1Feature4: 'Custom text/colors',
 
+      mobilePack2Name: 'Landing Page',
       mobilePack2Feature1: 'Custom design',
       mobilePack2Feature2: 'Inventory management',
       mobilePack2Feature3: 'Up to 100 productos',
@@ -77,6 +87,7 @@ export default {
       mobilePack2Feature5: 'Membership registration',
       mobilePack2Feature6: 'Unlimited views/pages',
 
+      mobilePack3Name: 'Landing Page',
       mobilePack3Feature1: 'Custom design',
       mobilePack3Feature2: 'Reservation management',
       mobilePack3Feature3: 'Membership registration',
@@ -84,6 +95,7 @@ export default {
       mobilePack3Feature5: 'Membership registration',
       mobilePack3Feature6: 'Unlimited views/pages',
 
+      mobilePack4Name: 'Landing Page',
       mobilePack4Feature1: 'Tell us your idea of a kickass app and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
     },
     es: {
@@ -97,12 +109,14 @@ export default {
       subtitle: 'Tu paquete incluye:',
       propousalMessage: 'COMENTARIOS Y PREGUNTAS',
       send: 'ENVIAR',
-      
+
+      webPack1Name: 'Landing Page',
       webPack1Feature1: 'Hasta 10 vistas/paginas',
       webPack1Feature2: '1 formulario personalizados',
       webPack1Feature3: 'Diseño de plantilla',
       webPack1Feature4: 'Textos/colores personalizados',
 
+      webPack2Name: 'Web Auto-administrable',
       webPack2Feature1: 'Vistas/paginas ilimitadas',
       webPack2Feature2: 'Auto-administrable',
       webPack2Feature3: 'Diseño personalizado',
@@ -110,6 +124,7 @@ export default {
       webPack2Feature5: '2 formularios',
       webPack2Feature6: '1 mes de soporte',
 
+      webPack3Name: 'Tienda online',
       webPack3Feature1: 'Hasta 100 productos',
       webPack3Feature2: 'Manejo de inventario',
       webPack3Feature3: 'Registro de usuarios',
@@ -117,6 +132,7 @@ export default {
       webPack3Feature5: 'Vistas/paginas ilimitadas',
       webPack3Feature6: '3 meses de soporte',
 
+      webPack4Name: 'Página a medida',
       webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!. Si es posible agregá tambien links de páginas web que tengas en mente para sacar ideas :)',
 
       socialTab: 'Manejo de redes sociales',
@@ -126,25 +142,30 @@ export default {
       socialPrice2: '$ 7000',
       socialPrice3: '$ 1000',
       socialPrice4: '$ ?',
+
+      socialPack1Name: 'Landing Page',
       socialPack1Feature1: '5 tabs or views',
       socialPack1Feature2: '1 custom form',
       socialPack1Feature3: 'Design from templates',
       socialPack1Feature4: 'Custom text/colors',
-      
+
+      socialPack2Name: 'Landing Page',
       socialPack2Feature1: '15 tabs or views',
       socialPack2Feature2: '2 custom form',
       socialPack2Feature3: 'Custom design',
       socialPack2Feature4: 'Users management',
       socialPack2Feature5: 'Google AdWords',
       socialPack2Feature6: '1 month support',
-      
+
+      socialPack3Name: 'Landing Page',
       socialPack3Feature1: '30 tabs or views',
       socialPack3Feature2: '3 custom forms',
       socialPack3Feature3: 'Users management',
       socialPack3Feature4: 'Custom design',
       socialPack3Feature5: 'Google AdWords',
       socialPack3Feature6: '3 months support',
-      
+
+      socialPack4Name: 'Landing Page',
       socialPack4Feature1: 'Contanos tu idea de plan social y que deberia tener/hacer!. Si es posible agregá tambien links de páginas web que tengas en mente para sacar ideas :)',
 
       mobileTab: 'Aplicaciones para Celulares/Tablets',
@@ -154,11 +175,14 @@ export default {
       mobilePrice2: '$ 18000',
       mobilePrice3: '$ 17000',
       mobilePrice4: '$ ?',
+
+      mobilePack1Name: 'Landing Page',
       mobilePack1Feature1: 'Hasta 10 vistas',
       mobilePack1Feature2: '1 formulario personalizado',
       mobilePack1Feature3: 'Diseño de plantilla',
       mobilePack1Feature4: 'Textos/colores personalizados',
 
+      mobilePack2Name: 'Landing Page',
       mobilePack2Feature1: 'Vistas/paginas ilimitadas',
       mobilePack2Feature2: 'Manejo de inventario',
       mobilePack2Feature3: 'Diseño personalizado',
@@ -166,6 +190,7 @@ export default {
       mobilePack2Feature5: '1 mes de soporte',
       mobilePack2Feature6: 'Registro de usuarios',
 
+      mobilePack3Name: 'Landing Page',
       mobilePack3Feature1: 'Vistas/paginas ilimitadas',
       mobilePack3Feature2: 'Manejo de reservas',
       mobilePack3Feature3: 'Diseño personalizado',
@@ -173,8 +198,8 @@ export default {
       mobilePack3Feature5: '1 mes de soporte',
       mobilePack3Feature6: 'Registro de usuarios',
 
+      mobilePack4Name: 'Landing Page',
       mobilePack4Feature1: 'Contanos tu idea de aplicacion y que deberia tener/hacer!',
 
     }
 }
-

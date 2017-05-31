@@ -9,6 +9,38 @@
   padding: 3%;
 }
 
+.heading-separator {
+    background: #080000;
+    opacity: .9;
+    width: 45px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    border-radius: 99px;
+}
+
+.section-heading {
+  text-align: center;
+  line-height: 45px;
+  font-weight: 900;
+  font-style: normal;
+  color: #1f1f1f;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.section-subheading {
+  margin: auto;
+  text-transform: none;
+  text-align: center;
+  margin-top: 16px;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+    font-style: normal;
+}
+
 
 .table-container {
   display: -webkit-flex; /* Safari */
@@ -154,6 +186,10 @@ p{
       color:#202020;
     }
   }
+
+.case-study__subtitle {
+  
+}
 
 
 .case-study:hover {
