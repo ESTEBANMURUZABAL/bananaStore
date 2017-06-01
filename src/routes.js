@@ -34,7 +34,10 @@ import SelectAdminPage from './components/pages/SelectPage/Web/SelectAdminPage';
 import SelectEcommercePage from './components/pages/SelectPage/Web/SelectEcommercePage';
 import SelectLandingPage from './components/pages/SelectPage/Web/SelectLandingPage';
 import SelectCustomPage from './components/pages/SelectPage/Web/SelectCustomPage';
-  
+
+//Select page components
+import EditPage from './components/pages/EditPage/EditPage';
+
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';
 
@@ -81,7 +84,7 @@ const routes = (
         <Route name="stores" handler={StoresPage} />
         <Route name="info" handler={InfoPage} />
         <Route name="articles" path="articles/?" handler={ArticlesListingPage} />
-        
+
         <Route name="servicios" handler={ServicesPage} />
         <Route name="contacto" handler={ContactPage} />
         <Route name="nosotros" handler={AboutPage} />
@@ -90,7 +93,9 @@ const routes = (
         <Route name="select-custom-page" path="select-custom-page" handler={SelectCustomPage} />
         <Route name="select-ecommerce-page" path="select-ecommerce-page" handler={SelectEcommercePage} />
         <Route name="select-landing-page" path="select-landing-page" handler={SelectLandingPage} />
-        
+
+        <Route name="edit-page" path="edit-page" handler={EditPage} />
+
         <Route name="article" path="articles/:contentId/?" handler={ArticlePage} />
         <Route name="article-slug" path="articles/:contentId/:contentSlug/?" handler={ArticlePage} />
         <Route name="adm" handler={Admin}>

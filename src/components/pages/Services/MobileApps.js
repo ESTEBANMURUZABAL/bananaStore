@@ -9,17 +9,17 @@ export default class MobileApps extends React.Component {
   state = {
       isMonthly: false
   };
-  
+
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
       getStore: React.PropTypes.func.isRequired
   };
-  
+
   componentDidMount() {
       require('./ServicesPage.scss');
       this.handleToggleChange = this.handleToggleChange.bind(this);
   }
-  
+
   handleToggleChange() {
     this.setState({ isMonthly: !this.state.isMonthly });
   }
@@ -31,8 +31,8 @@ export default class MobileApps extends React.Component {
 
     return (
       <div>
-        <div className="tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobileTitle')} locales={intlStore.getCurrentLocale()} /></div>
-        <p className="tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'mobileContent')} locales={intlStore.getCurrentLocale()} /></p>
+        <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobileTitle')} locales={intlStore.getCurrentLocale()} /></div>
+        <p className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'mobileContent')} locales={intlStore.getCurrentLocale()} /></p>
 
         <div className="snip1265">
 
@@ -114,4 +114,3 @@ export default class MobileApps extends React.Component {
     );
   }
 }
-

@@ -24,14 +24,14 @@ class BaseHtml extends React.Component {
                     <link rel="stylesheet" href={`${this.props.staticURL}/vendor/font-awesome-4.6.3/css/font-awesome.min.css`} />
                     {this.props.css.map((href, idx) => <link key={idx} rel="stylesheet" type="text/css" href={href} />)}
                     <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300" rel="stylesheet" />
-                
-                
+
+
                     <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet" />
                     <link href="https://use.fontawesome.com/20ab91acc4.js" rel="stylesheet" />
                     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" />
-          
+
                     <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,800" rel="stylesheet" />
                     <link href="https://fonts.googleapis.com/css?family=Montserrat:800" rel="stylesheet" />

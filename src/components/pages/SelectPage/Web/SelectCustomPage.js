@@ -2,6 +2,7 @@ import React from 'react';
 import {FormattedMessage} from 'react-intl';
 import intlData from './SelectPage.intl';// Flux
 import IntlStore from '../../../../stores/Application/IntlStore';
+import {Link} from 'react-router';
 
 export default class SelectCustomPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   static contextTypes = {
@@ -20,6 +21,27 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
     return (
       <div className="select-page-wrapper">
 
+        <div className="indicator-wrapper">
+          <ol className="list-unstyled text-center step-indicator step-indicator-horizontal">
+          <li className="active info">
+            <div className="step">1</div>
+            <div className="caption">Select Template</div>
+          </li>
+          <li className="">
+            <div className="step">2</div>
+            <div className="caption hidden-xs hidden-sm">Style your website</div>
+          </li>
+            <li className="">
+              <div className="step">3</div>
+              <div className="caption hidden-xs hidden-sm">Fullfil content/Images & logo</div>
+            </li>
+            <li className="">
+              <div className="step">4</div>
+              <div className="caption hidden-xs hidden-sm">Confirm and Payment</div>
+            </li>
+          </ol>
+        </div>
+
         <div className="section-heading">
           <div><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Name')} locales={intlStore.getCurrentLocale()} /></div>
         </div>
@@ -37,7 +59,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Select Demo</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
 
@@ -47,7 +69,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Developing Hexxis</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
 
@@ -57,7 +79,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Developing Hexxis</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
 
@@ -67,7 +89,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Developing Hexxis</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
 
@@ -77,7 +99,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Developing Hexxis</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
 
@@ -87,7 +109,7 @@ export default class SelectCustomPage extends React.Component { // eslint-disabl
           	</figure>
             <div className="case-study__overlay">
             	<h2 className="case-study__title">Developing Hexxis</h2>
-              <a className="case-study__link" href="http://keydesign-themes.com/intact/creative-agency/">View Case Study</a>
+              <Link className="case-study__link" to="edit-page" params={routeParams}>View Case Study</Link>
             </div>
           </div>
         </div>

@@ -188,7 +188,7 @@ p{
   }
 
 .case-study__subtitle {
-  
+
 }
 
 
@@ -223,5 +223,102 @@ p{
 }
 .study6{
   background-image: url('../../../../assets/demo1.png');
+}
 
+
+
+
+
+.indicator-wrapper{
+  padding: 2% 0% 2% 0%;
+}
+.step-indicator {
+  width: 100%;
+}
+.step-indicator li {
+  margin-bottom: 22px;
+  display: block;
+}
+.step-indicator .step {
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 19px;
+}
+.step-indicator .step-status {
+  color: #666666;
+  font-weight: normal;
+  font-size: 13px;
+}
+.step-indicator .info .step {
+  background-color: #07639d;
+}
+.step-indicator .info .caption {
+  font-weight: 700;
+}
+.step-indicator .success .step {
+  background-color: #297c00;
+}
+.step-indicator .warning .step {
+  background-color: #FF9900;
+  color: #333333;
+}
+.step-indicator .warning .caption {
+  font-weight: 700;
+}
+.step-indicator .danger .step {
+  background-color: #cc3300;
+}
+.step-indicator .danger .caption {
+  color: #cc3300;
+  font-weight: 700;
+}
+
+.step-indicator-vertical li {
+  margin-bottom: 22px;
+  display: block;
+}
+.step-indicator-vertical li > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.step-indicator-vertical .caption {
+  padding-left: 8px;
+}
+
+.step-indicator-horizontal {
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  position: relative;
+  vertical-align: middle;
+}
+.step-indicator-horizontal li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+  padding: 0;
+}
+.step-indicator-horizontal li:before {
+  content: "";
+  background-color: #cccccc;
+  height: 1px;
+  display: block;
+  top: 20px;
+  position: relative;
+  z-index: -1;
+}
+.step-indicator-horizontal li:first-child:before {
+  left: 50%;
+}
+.step-indicator-horizontal li:last-child:before {
+  right: 50%;
+}
+.step-indicator-horizontal .caption {
+  padding-top: 8px;
 }
