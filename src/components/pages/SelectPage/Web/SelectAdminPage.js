@@ -19,7 +19,7 @@ export default class SelectAdminPage extends React.Component { // eslint-disable
     let routeParams = {locale: intlStore.getCurrentLocale()};
 
     return (
-      <div className="select-page-wrapper">
+      <div className="select-page__wrapper">
 
         <div className="indicator-wrapper">
           <ol className="list-unstyled text-center step-indicator step-indicator-horizontal">
@@ -43,13 +43,13 @@ export default class SelectAdminPage extends React.Component { // eslint-disable
         </div>
 
 
-        <div className="section-heading">
+        <div className="select-page__section-heading">
           <div><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2Name')} locales={intlStore.getCurrentLocale()} /></div>
         </div>
 
-        <span className="heading-separator"></span>
+        <span className="select-page__heading-separator"></span>
 
-        <div className="section-subheading">
+        <div className="select-page__section-subheading">
           <div>Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs</div>
         </div>
 
