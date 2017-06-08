@@ -5,24 +5,24 @@ import intlData from './ContactPage.intl';// Flux
 import IntlStore from '../../../stores/Application/IntlStore';
 
 export default class ContactPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
-  
+
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
       getStore: React.PropTypes.func.isRequired
   };
-  
+
   componentDidMount() {
       require('./ContactPage.scss');
   }
-  
+
   render() {
     let intlStore = this.context.getStore(IntlStore);
-    let routeParams = {locale: intlStore.getCurrentLocale()}; 
+    let routeParams = {locale: intlStore.getCurrentLocale()};
 
     return (
-      <section id="contact">
-          <h1 className="section-header"><FormattedMessage message={intlStore.getMessage(intlData, 'title')} locales={intlStore.getCurrentLocale()} /></h1>
-          <div className="contact-wrapper">
+      <section id="contact-page__contact">
+          <h1 className="contact-page__section-header"><FormattedMessage message={intlStore.getMessage(intlData, 'title')} locales={intlStore.getCurrentLocale()} /></h1>
+          <div className="contact-page__contact-wrapper">
 
             <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
 
@@ -46,9 +46,9 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
 
               <textarea className="form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'message')} name="message"></textarea>
 
-              <button className="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-                <div className="button">
-                  <i className="fa fa-paper-plane"></i><span className="send-text">SEND</span>
+              <button className="btn btn-primary contact-page__send-button" id="submit" type="submit" value="SEND">
+                <div className="contact-page__button">
+                  <i className="fa fa-paper-plane"></i><span className="contact-page__send-text">SEND</span>
                 </div>
 
               </button>
@@ -60,11 +60,11 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
               <div className="direct-contact-container">
 
                 <ul className="contact-list">
-                  <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text place">Chaco-Argentina</span></i></li>
+                  <li className="list-item"><i className="fa fa-map-marker fa-2x"><span className="contact-text contact-page__place">Chaco-Argentina</span></i></li>
 
-                  <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:9-362-420-1230" title="Give me a call">(3624) 20-1230</a></span></i></li>
+                  <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text contact-page__phone"><a href="tel:9-362-420-1230" title="Give me a call">(3624) 20-1230</a></span></i></li>
 
-                  <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">BananaCatCo@gmail.com</a></span></i></li>
+                  <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text contact-page__gmail"><a href="mailto:#" title="Send me an email">BananaCatCo@gmail.com</a></span></i></li>
 
                 </ul>
 

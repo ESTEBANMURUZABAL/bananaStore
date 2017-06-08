@@ -33,7 +33,7 @@ export default class SocialMedia extends React.Component {
     return (
       <div>
         <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'socialTitle')} locales={intlStore.getCurrentLocale()} /></div>
-        <p className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'socialContent')} locales={intlStore.getCurrentLocale()} /></p>
+        <div className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'socialContent')} locales={intlStore.getCurrentLocale()} /></div>
 
         <div className="snip1265">
 

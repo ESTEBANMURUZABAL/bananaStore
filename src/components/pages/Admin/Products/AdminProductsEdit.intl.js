@@ -21,7 +21,8 @@ export default {
         stock: 'Stock',
         title: 'Edit Product',
         type: 'Type',
-        vat: '% VAT (Included)'
+        vat: '% VAT (Included)',
+        delete: 'Delete'
     },
     es: {
         back: 'Volver',
@@ -44,6 +45,7 @@ export default {
         stock: 'Stock',
         title: 'Editar Producto',
         type: 'Tipo',
-        vat: '% IVA (Incluído)'
+        vat: '% IVA (Incluído)',
+        delete: 'Borrar'
     }
 };

@@ -1,4 +1,4 @@
-#contact {
+#contact-page__contact {
   width: 100%;
   background-color: #2A2C39;
   overflow: hidden;
@@ -6,7 +6,7 @@
   height:95vh;
 }
 
-.section-header {
+.scontact-page__ection-header {
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
@@ -17,7 +17,7 @@
   margin-bottom: 25px;
 }
 
-.contact-wrapper {
+.contact-page__contact-wrapper {
   margin: 0 auto;
   padding-top: 20px;
   position: relative;
@@ -91,7 +91,7 @@ textarea.form-control {
 
 }
 
-.send-button {
+.contact-page__send-button {
   margin-top: 15px;
   height: 34px;
   width: 400px;
@@ -99,20 +99,20 @@ textarea.form-control {
   transition: all .2s ease-in-out;
 }
 
-.button {
+.contact-page__button {
   width: 400px;
   height: 34px;
   transition: all .2s ease-in-out;
 }
 
-.send-text {
+.contact-page__send-text {
   display: block;
   margin-top: 10px;
   font: 100 14px 'Lato', sans-serif;
   letter-spacing: 2px;
 }
 
-.button:hover {
+.contact-page__button:hover {
   transform: translate3d(0px, -29px, 0px);
 }
 
@@ -197,31 +197,31 @@ button, input, optgroup, select, textarea {
   color: #aaa;
 }
 
-.contact-text {
+.contact-page__contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
 
-.place {
+.contact-page__place {
   margin-left: 62px;
 }
 
-.phone {
+.contact-page__phone {
   margin-left: 56px;
 }
 
-.gmail {
+.contact-page__gmail {
   margin-left: 53px;
 }
 
-.contact-text a {
+.contact-page__contact-text a {
   color: #bbb;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
-.contact-text a:hover {
+.contact-page__contact-text a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -292,10 +292,10 @@ button, input, optgroup, select, textarea {
 
 /* Begin Media Queries*/
 @media screen and (max-width: 760px) {
-    #contact {
+    #contact-page__contact {
         height: 1000px;
     }
-  .section-header {
+  .contact-page__section-header {
     font-size: 65px;
   }
   .direct-contact-container, .form-horizontal {
@@ -319,10 +319,10 @@ button, input, optgroup, select, textarea {
 }
 
 @media screen and (max-width: 569px) {
-  #contact {
+  #contact-page__contact {
     height: 1200px;
     }
-  .section-header{
+  .contact-page__section-header{
     font-size: 50px;
   }
   .direct-contact-container, .form-wrapper {
@@ -360,7 +360,7 @@ button, input, optgroup, select, textarea {
 }
 
 @media screen and (max-width: 410px) {
-  .send-button {
+  .contact-page__send-button {
     width: 99%;
   }
 }
