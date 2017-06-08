@@ -1,0 +1,153 @@
+
+.edit-page__heading-separator {
+    background: #080000;
+    opacity: .9;
+    width: 45px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    border-radius: 99px;
+}
+
+.edit-page__heading-separator {
+    background: #080000;
+    opacity: .9;
+    width: 45px;
+    height: 2px;
+    display: block;
+    margin: auto;
+    border-radius: 99px;
+}
+
+.edit-page__section-heading {
+  text-align: center;
+  line-height: 45px;
+  font-weight: 900;
+  font-style: normal;
+  color: #1f1f1f;
+  font-size: 34px;
+  margin-bottom: 16px;
+}
+
+.edit-page__section-subheading {
+  margin: auto;
+  text-transform: none;
+  text-align: center;
+  margin-top: 16px;
+  max-width: 650px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 300;
+    font-style: normal;
+}
+
+.edit-page__wrapper {
+  margin: 0 auto;
+  padding-top: 20px;
+  position: relative;
+  max-width: 800px;
+  align-content: space-between;
+}
+
+.propusal-title {
+  font: 400 25px 'Lato', sans-serif;
+  letter-spacing: 1.9px;
+  color: #bbb;
+  padding: 40px 0 40px 0;
+  text-align: center;
+}
+
+
+.indicator-wrapper{
+  padding: 2% 0% 2% 0%;
+}
+.step-indicator {
+  width: 100%;
+}
+.step-indicator li {
+  margin-bottom: 22px;
+  display: block;
+}
+.step-indicator .step {
+  background-color: #cccccc;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 19px;
+}
+.step-indicator .step-status {
+  color: #666666;
+  font-weight: normal;
+  font-size: 13px;
+}
+.step-indicator .info .step {
+  background-color: #07639d;
+}
+.step-indicator .info .caption {
+  font-weight: 700;
+}
+.step-indicator .success .step {
+  background-color: #297c00;
+}
+.step-indicator .warning .step {
+  background-color: #FF9900;
+  color: #333333;
+}
+.step-indicator .warning .caption {
+  font-weight: 700;
+}
+.step-indicator .danger .step {
+  background-color: #cc3300;
+}
+.step-indicator .danger .caption {
+  color: #cc3300;
+  font-weight: 700;
+}
+
+.step-indicator-vertical li {
+  margin-bottom: 22px;
+  display: block;
+}
+.step-indicator-vertical li > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+.step-indicator-vertical .caption {
+  padding-left: 8px;
+}
+
+.step-indicator-horizontal {
+  display: table;
+  table-layout: fixed;
+  border-collapse: separate;
+  position: relative;
+  vertical-align: middle;
+}
+.step-indicator-horizontal li {
+  display: table-cell;
+  float: none;
+  width: 1%;
+  padding: 0;
+}
+.step-indicator-horizontal li:before {
+  content: "";
+  background-color: #cccccc;
+  height: 1px;
+  display: block;
+  top: 20px;
+  position: relative;
+  z-index: -1;
+}
+.step-indicator-horizontal li:first-child:before {
+  left: 50%;
+}
+.step-indicator-horizontal li:last-child:before {
+  right: 50%;
+}
+.step-indicator-horizontal .caption {
+  padding-top: 8px;
+}

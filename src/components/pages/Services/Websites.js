@@ -11,7 +11,7 @@ export default class Websites extends React.Component {
   state = {
       isMonthly: false
   };
-  
+
   static contextTypes = {
       executeAction: React.PropTypes.func.isRequired,
       getStore: React.PropTypes.func.isRequired
@@ -20,7 +20,7 @@ export default class Websites extends React.Component {
   handleToggleChange() {
     this.setState({ isMonthly: !this.state.isMonthly });
   }
-  
+
   componentDidMount() {
       require('./ServicesPage.scss');
       this.handleToggleChange = this.handleToggleChange.bind(this);
@@ -33,8 +33,8 @@ export default class Websites extends React.Component {
 
     return (
       <div>
-        <div className="tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} /></div>
-        <p className="tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} /></p>
+        <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} /></div>
+        <p className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} /></p>
 
         <div className="snip1265">
 
@@ -116,4 +116,3 @@ export default class Websites extends React.Component {
     );
   }
 }
-

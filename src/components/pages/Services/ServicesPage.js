@@ -23,7 +23,7 @@ import intlData from './Services.intl';
  * Component.
  */
 export default class ServicesPage extends React.Component {
-  
+
     static contextTypes = {
         executeAction: React.PropTypes.func.isRequired,
         getStore: React.PropTypes.func.isRequired
@@ -33,7 +33,7 @@ export default class ServicesPage extends React.Component {
     handleClick(index) {
       this.setState({ activeIndex: index });
     }
-  
+
     //*** Initial State ***//
 
     state = {
@@ -55,14 +55,14 @@ export default class ServicesPage extends React.Component {
         'SocialMedia': SocialMedia,
         'MobileApps': MobileApps
       };
-      
+
       let intlStore = this.context.getStore(IntlStore);
       let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
       const Component = Components[this.state.activeIndex];
-          
+
       return (
-        <div className="service-wrapper">
-          <div className="service-tabs-container">
+        <div className="service-page__wrapper">
+          <div className="service-page__tabs-container">
             <ServiceContainer index="Websites" isActive={this.state.activeIndex==='Websites'} onClick={this.handleClick.bind(this)}>
                 <FormattedMessage
                 message={intlStore.getMessage(intlData, 'websitesTab')}
@@ -79,14 +79,10 @@ export default class ServicesPage extends React.Component {
                 locales={intlStore.getCurrentLocale()} />
             </ServiceContainer>
           </div>
-          <div className="service-info-container">
+          <div className="service-page__info-container">
             <Component />
           </div>
         </div>
       );
     }
 }
-
-
-
-
