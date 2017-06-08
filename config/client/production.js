@@ -2,7 +2,7 @@
 // Do not require this directly. Use ./src/config instead.
 export default {
     app: {
-        title: 'Tienda 765',
+        title: 'BananaCatCo',
         locale: {
             available: ['en', 'es'],
             default: 'en'
@@ -10,7 +10,7 @@ export default {
     },
     api: {
         atlas: {
-            baseUrl: 'http://localhost:8000/v1'
+            baseUrl: 'http://107.170.56.213/v1'
         }
     },
     googleAnalytics: {
