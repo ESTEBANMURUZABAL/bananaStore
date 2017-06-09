@@ -15,14 +15,14 @@ export default {
     },
     googleAnalytics: {
         enabled: true,
-        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID, // LIVE Property
+        trackingId: 'UA-100816759-1', // LIVE Property
         options: {
             debug: false
         }
     },
     facebookPixel: {
         enabled: true,
-        id: process.env.FACEBOOK_PIXEL_ID
+        id: '247941852357863'
     },
     crisp: {
         enabled: true,
