@@ -83,66 +83,9 @@ class Homepage extends React.Component {
     //*** Template ***//
 
     render() {
-
-        //
-        // Helper methods & variables
-        //
-
         let intlStore = this.context.getStore(IntlStore);
-
-        // Base route params
         let routeParams = {locale: this.context.getStore(IntlStore).getCurrentLocale()};
 
-        // Featured Collections
-        let featuredCollections = [null, null, null, null];
-        for (let i=0; i<4; i++) {
-            if (this.state.collections[i]) {
-                let collection = this.state.collections[i];
-                featuredCollections[i] = {
-                    name: collection.name,
-                    link: {
-                        to: 'collection-slug',
-                        params: Object.assign({
-                            collectionId: collection.id,
-                            collectionSlug: slugify(intlStore.getMessage(collection.name))
-                        }, routeParams)
-                    }
-                };
-                if (collection.images && collection.images.length > 0) {
-                    featuredCollections[i].img = {
-                        src: `//${collection.images[0].url}`,
-                        alt: intlStore.getMessage(collection.name)
-                    };
-                }
-            }
-        }
-
-        // Featured Products SideMenu
-        let productFilters = () => {
-            if (this.state.featuredCategories.length > 0 || this.state.featuredCollections.length > 0) {
-                return [
-                    {
-                        name: {en: 'Categories', es: 'Categorias'},
-                        collections: this.state.featuredCategories
-                    },
-                    {
-                        name: {en: 'Collections', es: 'Colecciones'},
-                        collections: this.state.featuredCollections
-                    }
-                ];
-            }
-        };
-
-        // Fetaured Products Title Component
-        let featuredProductsTitle = function() {
-            return <FormattedMessage
-                       message={intlStore.getMessage(intlData, 'productsList')}
-                       locales={intlStore.getCurrentLocale()} />;
-        };
-
-        //
-        // Return
-        //
         return (
             <div className="homepage">
                 <div className="homepage__cta">
@@ -158,9 +101,7 @@ class Homepage extends React.Component {
                   </div>
                 </div>
 
-              
 
-              
             </div>
         );
     }

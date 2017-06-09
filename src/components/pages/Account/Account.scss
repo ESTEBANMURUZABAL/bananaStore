@@ -20,6 +20,7 @@
 .account__content {
     display: flex;
     margin-top: 15px;
+    margin: 0 2% 0 2%;
 
     @include breakpoint(handhelds) {
         flex-direction: column;

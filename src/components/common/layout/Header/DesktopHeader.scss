@@ -3,7 +3,7 @@
 .desktop-header {
     display: flex;
     justify-content: center;
-    background-color: #263238;
+    background-color: #2a2c39;
 }
 
 /*
@@ -49,8 +49,12 @@
  */
 
 .desktop-header__logo {
-    font: 300 25px $font-family-heading, sans-serif;
-    color: white;
+  width: 100%;
+  min-width: 129px;
+  max-width: 129px;
+  height: 38px;
+  background: url('../../../../../static/banana-logo.png');
+  background-size: 100%;
 }
 
 .desktop-header__logo-link {
