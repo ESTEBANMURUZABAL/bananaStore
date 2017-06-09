@@ -91,7 +91,7 @@ export default class MobileApps extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/mobilePack3"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+            <div className="plan-select"><Link to="/services/mobilePack3"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">

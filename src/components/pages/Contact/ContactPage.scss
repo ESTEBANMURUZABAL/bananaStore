@@ -6,7 +6,7 @@
   height:95vh;
 }
 
-.scontact-page__ection-header {
+.contact-page__section-header {
   text-align: center;
   margin: 0 auto;
   padding-top: 30px;
@@ -197,31 +197,31 @@ button, input, optgroup, select, textarea {
   color: #aaa;
 }
 
-.contact-page__contact-text {
+.contact-text {
   font: 300 18px 'Lato', sans-serif;
   letter-spacing: 1.9px;
   color: #bbb;
 }
 
-.contact-page__place {
+.place {
   margin-left: 62px;
 }
 
-.contact-page__phone {
+.phone {
   margin-left: 56px;
 }
 
-.contact-page__gmail {
+.gmail {
   margin-left: 53px;
 }
 
-.contact-page__contact-text a {
+.contact-text a {
   color: #bbb;
   text-decoration: none;
   transition-duration: 0.2s;
 }
 
-.contact-page__contact-text a:hover {
+.contact-text a:hover {
   color: #fff;
   text-decoration: none;
 }
