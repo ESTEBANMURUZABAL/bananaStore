@@ -14,7 +14,7 @@ import QuantitySelector from '../forms/QuantitySelector';
 import Text from '../typography/Text';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Component

@@ -16,7 +16,7 @@ import Text from '../../../common/typography/Text';
 import intlData from './AdminProductsUpload.intl';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Component

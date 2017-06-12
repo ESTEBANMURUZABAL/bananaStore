@@ -16,7 +16,7 @@ COPY package.json /app/
 RUN npm install
 
 # Supervisor settings
-COPY docker/supervisord.conf /etc/supervisor/conf.d/tienda765.conf
+COPY docker/supervisord.conf /etc/supervisor/conf.d/bananaCat.conf
 
 # Application source code
 COPY config/ /app/config

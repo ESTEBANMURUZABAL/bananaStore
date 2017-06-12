@@ -1,7 +1,7 @@
 import applicationActions from '../../constants/application';
 import collectionActions from '../../constants/collections';
 
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananacat');
 
 export default async function bulkCollectionsUpdate(context, payload, done) {
     context.dispatch(collectionActions.COLLECTIONS_BULK_SAVE);

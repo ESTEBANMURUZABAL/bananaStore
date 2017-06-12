@@ -118,7 +118,7 @@ class Footer extends React.Component {
                                     <li className="footer__social-item">
                                         <div className="footer__social-icon footer__facebook-icon"></div>
                                         <div>
-                                            <a className="footer__link footer__social-link" href="//facebook.com/tienda765" target="_blank">
+                                            <a className="footer__link footer__social-link" href="//facebook.com/bananaCat" target="_blank">
                                                 <Text size="small">Facebook</Text>
                                             </a>
                                         </div>
@@ -126,7 +126,7 @@ class Footer extends React.Component {
                                     <li className="footer__social-item">
                                         <div className="footer__social-icon footer__instagram-icon"></div>
                                         <div>
-                                            <a className="footer__link footer__social-link" href="//instagram.com/tienda765" target="_blank">
+                                            <a className="footer__link footer__social-link" href="//instagram.com/bananaCat" target="_blank">
                                                 <Text size="small">Instagram</Text>
                                             </a>
                                         </div>
@@ -134,7 +134,7 @@ class Footer extends React.Component {
                                     <li className="footer__social-item">
                                         <div className="footer__social-icon footer__pinterest-icon"></div>
                                         <div>
-                                            <a className="footer__link footer__social-link" href="//pinterest.com/tienda765" target="_blank">
+                                            <a className="footer__link footer__social-link" href="//pinterest.com/bananaCat" target="_blank">
                                                 <Text size="small">Pinterest</Text>
                                             </a>
                                         </div>
@@ -142,7 +142,7 @@ class Footer extends React.Component {
                                     <li className="footer__social-item">
                                         <div className="footer__social-icon footer__twitter-icon"></div>
                                         <div>
-                                            <a className="footer__link footer__social-link" href="//twitter.com/tienda765" target="_blank">
+                                            <a className="footer__link footer__social-link" href="//twitter.com/bananaCat" target="_blank">
                                                 <Text size="small">Twitter</Text>
                                             </a>
                                         </div>

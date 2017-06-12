@@ -1,7 +1,7 @@
 import applicationActions from '../../constants/application';
 import contentActions from '../../constants/contents';
 
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananacat');
 
 export default async function bulkBannerUpdates(context, payload, done) {
     context.dispatch(contentActions.CONTENTS_BULK_SAVE);

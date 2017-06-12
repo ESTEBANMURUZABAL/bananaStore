@@ -2,7 +2,7 @@ import checkoutActions from '../../constants/checkout';
 import config from '../../config';
 
 // Initialize debugging utility
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananacat');
 
 export default function createCheckout(context, payload, done) {
     context.dispatch(checkoutActions.CHECKOUT_CREATE);

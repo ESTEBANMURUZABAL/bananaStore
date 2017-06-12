@@ -14,7 +14,7 @@ require('./src/utils/intlServerPolyfill');
  * Start application server.
  */
 require('./src/server');
-
+require('dotenv').config();
 /**
  * In development, also start Webpack dev server.
  */

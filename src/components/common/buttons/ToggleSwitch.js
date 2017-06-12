@@ -10,7 +10,7 @@ import ApplicationStore from '../../../stores/Application/ApplicationStore';
 import FormLabel from '../forms/FormLabel';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Component

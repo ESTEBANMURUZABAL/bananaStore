@@ -16,7 +16,7 @@ import Select from '../../../common/forms/Select';
 import intlData from './AdminProductsAddForm.intl';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Component

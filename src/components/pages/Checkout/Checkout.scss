@@ -31,6 +31,7 @@
 .checkout__content {
     display: flex;
     margin-top: 40px;
+    padding: 0 2% 0 2%;
 
     @include breakpoint(handhelds) {
         flex-direction: column;

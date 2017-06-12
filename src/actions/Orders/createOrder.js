@@ -18,7 +18,7 @@ import ProductDetailsStore from '../..//stores/Products/ProductDetailsStore';
 import config from '../../config';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Create a new order

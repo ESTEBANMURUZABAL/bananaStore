@@ -7,7 +7,7 @@ import React from 'react';
 import IntlStore from '../../../stores/Application/IntlStore';
 
 // Instantiate debugger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Component

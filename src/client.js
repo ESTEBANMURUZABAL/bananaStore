@@ -27,7 +27,7 @@ import {loadIntlPolyfill, loadLocaleData} from './utils/intlClientPolyfill';
 import config from './config';
 
 // Setup and initialize debugging utility.
-const debug = Debug('tienda765');
+const debug = Debug('bananaStore');
 
 // For chrome dev tool support.
 window.React = React;

@@ -5,7 +5,7 @@ import createStore from 'fluxible/addons/createStore';
 
 import accountActions from '../../constants/account';
 
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Create Store.

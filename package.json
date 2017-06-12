@@ -6,8 +6,8 @@
   "sasslintConfig": ".sass-lint.yml",
   "scripts": {
     "build": "rm -rf static/dist && webpack --stats --progress --config ./webpack/prod.config.js",
-    "dev": "NODE_ENV=development DEBUG=tienda765 node index",
-    "prod": "NODE_ENV=production DEBUG=tienda765 node index"
+    "dev": "NODE_ENV=development DEBUG=bananacat node index",
+    "prod": "NODE_ENV=production DEBUG=bananacat node index"
   },
   "author": "Esteban Muruzabal",
   "engines": {

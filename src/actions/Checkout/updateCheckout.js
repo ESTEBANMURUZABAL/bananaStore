@@ -10,7 +10,7 @@ import IntlStore from '../../stores/Application/IntlStore';
 import checkoutActions from '../../constants/checkout';
 
 // Instantiate logger
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Partial checkout update

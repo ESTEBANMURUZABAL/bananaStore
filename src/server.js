@@ -28,7 +28,7 @@ import NotFound from './components/pages/NotFound/NotFound';
 import ServerError from './components/pages/ServerError/ServerError';
 
 // Initialize debugging utility
-let debug = Debug('tienda765');
+let debug = Debug('bananaCat');
 
 // App fluxible wrapper, configurations, base html component and router action
 import app from './app';

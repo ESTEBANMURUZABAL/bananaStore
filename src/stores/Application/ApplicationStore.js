@@ -4,7 +4,7 @@
 import applicationActions from '../../constants/application';
 import createStore from 'fluxible/addons/createStore';
 
-let debug = require('debug')('tienda765');
+let debug = require('debug')('bananaCat');
 
 /**
  * Create Store.
