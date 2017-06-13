@@ -33,9 +33,10 @@ export default class Websites extends React.Component {
 
     return (
       <div>
-        <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} /></div>
-        <div className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} /></div>
-
+        <div className="service-page__text-wrapper">
+          <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webTitle')} /></div>
+          <div className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'webContent')} /></div>
+        </div>
         <div className="snip1265">
 
           <div className="plan">
