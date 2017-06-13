@@ -107,7 +107,7 @@ export default class SocialMedia extends React.Component {
             <ul className="plan-features">
               <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
             </ul>
-            <div className="plan-select"><Link to="/services/socialPack4"><li><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></li></Link></div>
+            <div className="plan-select"><Link to="/services/socialPack4"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
         </div>

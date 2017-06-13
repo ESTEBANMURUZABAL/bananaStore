@@ -1,4 +1,7 @@
-#about-container {
+@import '../../../styles/mixins/breakpoints.scss';
+@import '../../../styles/variables.scss';
+
+.about-container {
   height:100vh;
   width:100%;
   background-color: #2A2C39;
@@ -13,4 +16,16 @@
   left: 50%;
   text-align: justify;
   transform: translate(-50%, -50%)
+
+}
+
+@include breakpoint(handhelds) {
+  .about-wrapper {
+    font: 200 20px 'Lato';
+    top:auto;
+    left: auto;
+    padding: 5%;
+    text-align: center;
+    transform:none;
+  }
 }

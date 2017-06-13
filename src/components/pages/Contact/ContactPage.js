@@ -24,7 +24,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
          <h1 className="contact-page__section-header"><FormattedMessage message={intlStore.getMessage(intlData, 'title')} locales={intlStore.getCurrentLocale()} /></h1>
          <div className="contact-page__contact-wrapper">
 
-           <form className="form-horizontal" role="form" method="post" action="https://formspree.io/estebannmuruzabal@gmail.com">
+           <form className="form-horizontal" role="form" method="post" action="https://formspree.io/contacto@bananacat.co">
 
              <div className="form-group">
                <div className="col-sm-12">
@@ -50,9 +50,9 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
                <div className="contact-page__button">
                  <i className="fa fa-paper-plane"></i><span className="contact-page__send-text">SEND</span>
                </div>
-
              </button>
-             <input type="hidden" name="_next" value="http://localhost:4000/contact" />
+
+             <input type="hidden" name="_next" value="http://bananacat.co/es/contact" />
            </form>
 
 
@@ -64,7 +64,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
 
                  <li className="list-item"><i className="fa fa-phone fa-2x"><span className="contact-text phone"><a href="tel:9-362-420-1230" title="Give me a call">(3624) 20-1230</a></span></i></li>
 
-                 <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">BananaCatCo@gmail.com</a></span></i></li>
+                 <li className="list-item"><i className="fa fa-envelope fa-2x"><span className="contact-text gmail"><a href="mailto:#" title="Send me an email">contacto@bananacat.co</a></span></i></li>
 
                </ul>
 
@@ -85,7 +85,7 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
                </ul>
                <hr></hr>
 
-               <div className="copyright">&copy; 2016 ALL RIGHTS RESERVED</div>
+               <div className="copyright">&copy; 2017 ALL RIGHTS RESERVED</div>
 
              </div>
          </div>

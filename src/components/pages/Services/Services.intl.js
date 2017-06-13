@@ -1,5 +1,5 @@
 export default {
-    en: {      
+    en: {
         selectPlan: 'Select Plan',
         month: 'MONTH',
 
@@ -37,24 +37,24 @@ export default {
 
         webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it',
 
-        socialTab: 'Social Media Management',
+        socialTab: 'Social Marketing',
         socialTitle: 'Social Media',
         socialContent: 'Manage your entire social lifecycle. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.',
         socialPrice1: 'USD 250',
         socialPrice2: 'USD 450',
         socialPrice3: 'USD 625',
         socialPrice4: 'USD ?',
-        
+
         socialPack1Feature1: '5 tabs or views',
         socialPack1Feature2: '1 custom form',
         socialPack1Feature3: 'Design from templates',
         socialPack1Feature4: 'Custom text/colors',
-        
+
         socialPack2Feature1: '5 tabs or views',
         socialPack2Feature2: '1 custom form',
         socialPack2Feature3: 'Design from templates',
         socialPack2Feature4: 'Custom text/colors',
-        
+
         socialPack3Feature1: '5 tabs or views',
         socialPack3Feature2: '1 custom form',
         socialPack3Feature3: 'Design from templates',
@@ -62,7 +62,7 @@ export default {
 
         socialPack4Feature1: 'Tell us your idea of a kickass social plan and what would you like to have in it',
 
-        mobileTab: 'Applications for phones/tablets',
+        mobileTab: 'Apps móbiles',
         mobileTitle: 'Mobile/Tablet application development',
         mobileContent: 'All the aplications are developed for the following platforms: IOS (Iphone and Ipad) as well as ANDROID in their most known versions. It also includes one Splash Screen and a website platform for the management of the Online Store App and the Reservations App. Delivery: 20 days (after the client provides the content and images for development)',
         mobilePrice1: 'USD 900',
@@ -127,7 +127,7 @@ export default {
 
       webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!',
 
-      socialTab: 'Manejo de redes sociales',
+      socialTab: 'Marketing Social',
       socialTitle: 'Redes sociales',
       socialContent: 'Manejamos tu cartera de redes sociales. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.',
       socialPrice1: '$ 4000',
@@ -138,24 +138,24 @@ export default {
       socialPack1Feature2: '1 custom form',
       socialPack1Feature3: 'Design from templates',
       socialPack1Feature4: 'Custom text/colors',
-      
+
       socialPack2Feature1: '15 tabs or views',
       socialPack2Feature2: '2 custom form',
       socialPack2Feature3: 'Custom design',
       socialPack2Feature4: 'Users management',
       socialPack2Feature5: 'Google AdWords',
       socialPack2Feature6: '1 month support',
-      
+
       socialPack3Feature1: '30 tabs or views',
       socialPack3Feature2: '3 custom forms',
       socialPack3Feature3: 'Users management',
       socialPack3Feature4: 'Custom design',
       socialPack3Feature5: 'Google AdWords',
       socialPack3Feature6: '3 months support',
-      
+
       socialPack4Feature1: 'Contanos tu idea de plan social y que deberia tener/hacer!',
 
-      mobileTab: 'Aplicaciones para Celulares/Tablets',
+      mobileTab: 'Mobile Apps',
       mobileTitle: 'Desarrollo de aplicaciones para Celulares/Tablets',
       mobileContent: 'Todas las aplicaciones estan desarrolladas para dispositivos con plataformas IOS (Iphone y Ipad) como tambien ANDROID en sus formatos mas comunes. Tambien incluyen la edicion de la Splash Screen y una plataforma web para la administration de la Tienda online App y la Reservas online App. Plazo de entrega: 20 dias (despues de entregado los contenidos e imagenes por el cliente)',
       mobilePrice1: '$ 12000',
@@ -167,7 +167,7 @@ export default {
       mobilePack1Feature3: 'Diseño de plantilla',
       mobilePack1Feature4: 'Textos/colores personalizados',
 
-      mobilePack2Feature1: 'Vistas/paginas ilimitadas',
+      mobilePack2Feature1: 'Páginas ilimitadas',
       mobilePack2Feature2: 'Manejo de inventario',
       mobilePack2Feature3: 'Diseño personalizado',
       mobilePack2Feature4: 'Hasta 100 productos',
@@ -183,4 +183,4 @@ export default {
 
       mobilePack4Feature1: 'Contanos tu idea de aplicacion y que deberia tener/hacer!',
    }
-}   
+}

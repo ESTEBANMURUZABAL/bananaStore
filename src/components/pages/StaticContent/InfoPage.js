@@ -80,7 +80,7 @@ class InfoPage extends React.Component {
                             </p>
                             <p>
                                 Seja bem-vindo(a) à loja bananaCat Store!<br />
-                                Os Termos e Condições Gerais de Venda que se seguem regulamentam a oferta e a venda de produtos no nosso sítio web (“bananaCat.com”)<br />
+                                Os Termos e Condições Gerais de Venda que se seguem regulamentam a oferta e a venda de produtos no nosso sítio web (“bananaCat.co”)<br />
                                 Os produtos adquiridos nos sítios web bananaCat são vendidos directamente por bananaCat Portugal, Representações S.A. (de ora em diante designado por bananaCat ES).<br />
                                 Informações sobre a nossa Empresa: bananaCat ES é uma marca comercial com sede social em Portugal: bananaCat Portugal – Representações S.A. Zona Industrial de Prime NIF: 502055502<br />
                                 Recordamos também que os utilizadores têm o direito de solicitar e receber apoio da bananaCat sobre encomendas e entregas ou como fazer compras on-line no prazo de 72 horas úteis a partir do momento em que o pedido é recebido (salvo motivos de força maior).
@@ -145,7 +145,7 @@ class InfoPage extends React.Component {
                                 Aceda aqui à Plataforma Eletrónica de Resolução Alternativa de Litígios nos contratos de venda ou de serviços online.
                             </p>
                             <p>
-                                Para Queixas e Reclamações – <a href="mailto:vendas@bananaCat.com">vendas@bananaCat.com</a><br />
+                                Para Queixas e Reclamações – <a href="mailto:ventas@bananaCat.co">ventas@bananaCat.co</a><br />
                                 Mais informações em Portal do Consumidor - <a href="http://www.consumidor.ar" target="_blank">http://www.consumidor.ar</a>.
                             </p>
                         </div>
