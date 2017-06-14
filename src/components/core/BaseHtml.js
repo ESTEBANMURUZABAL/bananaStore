@@ -49,7 +49,7 @@ class BaseHtml extends React.Component {
                     {config.facebookPixel && config.facebookPixel.enabled === true ?
                         <noscript>
                             <img height="1" width="1" style={{display: 'none'}}
-                                 src={`https://www.facebook.com/tr?id=${config.facebookPixel.id}&ev=PageView&noscript=1`} />
+                                 src={`https://www.facebook.com/tr?id=247941852357863&ev=PageView&noscript=1`} />
                         </noscript>
                         :
                         null

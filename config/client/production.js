@@ -22,7 +22,7 @@ export default {
     },
     facebookPixel: {
         enabled: true,
-        id: '247941852357863'
+        id: process.env.FACEBOOK_PIXEL_ID
     },
     crisp: {
         enabled: true,

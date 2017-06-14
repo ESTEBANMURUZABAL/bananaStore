@@ -5,6 +5,7 @@ require('babel/register')({
     optional: ['es7.asyncFunctions', 'es7.classProperties', 'es7.decorators']
 });
 
+require('dotenv').config();
 /**
  * Intl APIs (ECMA-402) Polyfill.
  */
