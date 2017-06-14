@@ -39,7 +39,7 @@ export default class MobileApps extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-navigate-outline"></i>
-              <h4 className="plan-title">Landing Page</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePlanTitlePack1')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice5')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -57,7 +57,7 @@ export default class MobileApps extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-world"></i>
-              <h4 className="plan-title">Admin</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePlanTitlePack2')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice6')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -77,7 +77,7 @@ export default class MobileApps extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-people"></i>
-              <h4 className="plan-title">Online Store</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePlanTitlePack3')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice7')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -97,7 +97,7 @@ export default class MobileApps extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-speedometer"></i>
-              <h4 className="plan-title">Custom Mobile</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePlanTitlePack4')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePrice8')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -105,7 +105,7 @@ export default class MobileApps extends React.Component {
               )}
             </header>
             <ul className="plan-features">
-              <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack4Feature1')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
             <div className="plan-select"><Link to="/services/mobilePack4"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>

@@ -15,12 +15,13 @@ export default {
         webPrice7: 'USD 20',
         webPrice8: 'USD ?',
 
-        websitesTabpack1name: 'Landing Page',
+        webPlanTitlePack1: 'Landing Page',
         webPack1Feature1: 'Up to 10 views/pages',
         webPack1Feature2: '1 custom form',
         webPack1Feature3: 'Design from templates',
         webPack1Feature4: 'Custom text/colors',
 
+        webPlanTitlePack2: 'Self Manageable',
         webPack2Feature1: 'Unlimited views/pages',
         webPack2Feature2: 'Self-Editable content',
         webPack2Feature3: 'Custom design',
@@ -28,6 +29,7 @@ export default {
         webPack2Feature5: '2 custom form',
         webPack2Feature6: '1 month support',
 
+        webPlanTitlePack3: 'Online Store',
         webPack3Feature1: 'Up to 100 products',
         webPack3Feature2: 'Inventory management',
         webPack3Feature3: 'Membership registration',
@@ -35,6 +37,7 @@ export default {
         webPack3Feature5: 'Unlimited views/pages',
         webPack3Feature6: '3 months support',
 
+        webPlanTitlePack4: 'Custom web',
         webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it',
 
         socialTab: 'Social Marketing',
@@ -69,11 +72,14 @@ export default {
         mobilePrice2: 'USD 1100',
         mobilePrice3: 'USD 1000',
         mobilePrice4: 'USD ?',
+
+        mobilePlanTitlePack1: 'Landing Page',
         mobilePack1Feature1: 'Up to 10 views',
         mobilePack1Feature2: '1 custom form',
         mobilePack1Feature3: 'Design from templates',
         mobilePack1Feature4: 'Custom text/colors',
 
+        mobilePlanTitlePack2: 'Self Manageable',
         mobilePack2Feature1: 'Custom design',
         mobilePack2Feature2: 'Inventory management',
         mobilePack2Feature3: 'Up to 100 productos',
@@ -81,6 +87,7 @@ export default {
         mobilePack2Feature5: 'Membership registration',
         mobilePack2Feature6: 'Unlimited views/pages',
 
+        mobilePlanTitlePack3: 'Online Store',
         mobilePack3Feature1: 'Custom design',
         mobilePack3Feature2: 'Reservation management',
         mobilePack3Feature3: 'Membership registration',
@@ -88,6 +95,7 @@ export default {
         mobilePack3Feature5: 'Membership registration',
         mobilePack3Feature6: 'Unlimited views/pages',
 
+        mobilePlanTitlePack4: 'Custom App',
         mobilePack4Feature1: 'Tell us your idea of a kickass app and what would you like to have in it',
 
     },
@@ -106,11 +114,14 @@ export default {
       webPrice6: '$ 300',
       webPrice7: '$ 300',
       webPrice8: '$ ?',
+
+      webPlanTitlePack1: 'Web Simple',
       webPack1Feature1: 'Hasta 10 vistas/paginas',
       webPack1Feature2: '1 formulario personalizados',
       webPack1Feature3: 'Diseño de plantilla',
       webPack1Feature4: 'Textos/colores personalizados',
 
+      webPlanTitlePack2: 'Web Auto-administrable',
       webPack2Feature1: 'Vistas/paginas ilimitadas',
       webPack2Feature2: 'Auto-administrable',
       webPack2Feature3: 'Diseño personalizado',
@@ -118,6 +129,7 @@ export default {
       webPack2Feature5: '2 formularios',
       webPack2Feature6: '1 mes de soporte',
 
+      webPlanTitlePack3: 'Tienda Online',
       webPack3Feature1: 'Hasta 100 productos',
       webPack3Feature2: 'Manejo de inventario',
       webPack3Feature3: 'Registro de usuarios',
@@ -125,6 +137,7 @@ export default {
       webPack3Feature5: 'Vistas/paginas ilimitadas',
       webPack3Feature6: '3 meses de soporte',
 
+      webPlanTitlePack4: 'Web personalizada',
       webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!',
 
       socialTab: 'Marketing Social',
@@ -162,11 +175,14 @@ export default {
       mobilePrice2: '$ 18000',
       mobilePrice3: '$ 17000',
       mobilePrice4: '$ ?',
+
+      mobilePlanTitlePack1: 'Simple App',
       mobilePack1Feature1: 'Hasta 10 vistas',
       mobilePack1Feature2: '1 formulario personalizado',
       mobilePack1Feature3: 'Diseño de plantilla',
       mobilePack1Feature4: 'Textos/colores personalizados',
 
+      mobilePlanTitlePack2: 'Tienda Online',
       mobilePack2Feature1: 'Páginas ilimitadas',
       mobilePack2Feature2: 'Manejo de inventario',
       mobilePack2Feature3: 'Diseño personalizado',
@@ -174,6 +190,7 @@ export default {
       mobilePack2Feature5: '1 mes de soporte',
       mobilePack2Feature6: 'Registro de usuarios',
 
+      mobilePlanTitlePack3: 'App Auto-administrable',
       mobilePack3Feature1: 'Vistas/paginas ilimitadas',
       mobilePack3Feature2: 'Manejo de reservas',
       mobilePack3Feature3: 'Diseño personalizado',
@@ -181,6 +198,7 @@ export default {
       mobilePack3Feature5: '1 mes de soporte',
       mobilePack3Feature6: 'Registro de usuarios',
 
+      mobilePlanTitlePack4: 'App customizable',
       mobilePack4Feature1: 'Contanos tu idea de aplicacion y que deberia tener/hacer!',
    }
 }

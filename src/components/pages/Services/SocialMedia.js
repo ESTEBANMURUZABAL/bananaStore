@@ -35,7 +35,7 @@ export default class SocialMedia extends React.Component {
         <div className="service-page__text-wrapper">
           <div className="service-page__tab-title"><FormattedMessage message={intlStore.getMessage(intlData, 'socialTitle')} locales={intlStore.getCurrentLocale()} /></div>
           <div className="service-page__tab-content"><FormattedMessage message={intlStore.getMessage(intlData, 'socialContent')} locales={intlStore.getCurrentLocale()} /></div>
-        </div>  
+        </div>
         <div className="snip1265">
 
           <div className="plan">
@@ -70,8 +70,6 @@ export default class SocialMedia extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature2')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature4')} locales={intlStore.getCurrentLocale()} /></li>
-              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
-              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
             <div className="plan-select"><Link to="/services/socialPack2"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
@@ -90,8 +88,6 @@ export default class SocialMedia extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature2')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature4')} locales={intlStore.getCurrentLocale()} /></li>
-              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
-              <li><FormattedMessage message={intlStore.getMessage(intlData, 'socialPack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
             <div className="plan-select"><Link to="/services/socialPack3"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>

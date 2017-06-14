@@ -41,7 +41,7 @@ export default class Websites extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-navigate-outline"></i>
-              <h4 className="plan-title">Landing Page</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webPlanTitlePack1')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice5')} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} /></span><span className="plan-type"></span></div>
               ) : (
@@ -59,7 +59,7 @@ export default class Websites extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-world"></i>
-              <h4 className="plan-title">Admin</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webPlanTitlePack2')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice6')} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} /></span><span className="plan-type"></span></div>
               ) : (
@@ -79,7 +79,7 @@ export default class Websites extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-people"></i>
-              <h4 className="plan-title">Online Store</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webPlanTitlePack3')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice7')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -99,7 +99,7 @@ export default class Websites extends React.Component {
 
           <div className="plan">
             <header><i className="ion-ios-speedometer"></i>
-              <h4 className="plan-title">Custom Web</h4>
+              <h4 className="plan-title"><FormattedMessage message={intlStore.getMessage(intlData, 'webPlanTitlePack4')} /></h4>
               {isMonthly ? (
                 <div className="plan-cost"><span className="plan-price"><FormattedMessage message={intlStore.getMessage(intlData, 'webPrice8')} locales={intlStore.getCurrentLocale()} />/<FormattedMessage message={intlStore.getMessage(intlData, 'month')} locales={intlStore.getCurrentLocale()} /></span><span className="plan-type"></span></div>
               ) : (
@@ -107,7 +107,7 @@ export default class Websites extends React.Component {
               )}
             </header>
             <ul className="plan-features">
-              <li><li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li></li>
+              <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
             <div className="plan-select"><Link to="select-custom-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
