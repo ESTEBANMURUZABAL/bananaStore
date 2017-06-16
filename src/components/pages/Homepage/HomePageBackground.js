@@ -114,47 +114,37 @@ export default class Homepage extends React.Component {
         let intlStore = this.context.getStore(IntlStore);
         let routeParams = {locale: this.context.getStore(IntlStore).getCurrentLocale()};
         const changeWord = this.state.currentWord || '';
-
-        let content = () => {
-          if (this.state.banners && this.state.banners.length > 0) {
-            console.log(this.state.banners);
-              this.state.banners.forEach(function (banner) {
-                console.log(this.state.banner.object.enabled);
-                  if (banner.enabled) {
-                      return (
-                      <div className="homepage__cta">
-                        <div className="homepage__banners">
-                            <Carousel images={this.state.banners.filter(function (banner) {
-                                return banner.body && banner.body.image;
-                            }).map(function (banner) {
-                                return {
-                                    src: `//${banner.body.image.url}`,
-                                    link: banner.body.link
-                                };
-                            })} />
-                        </div>
-                      </div>
-                    );
-                  } else {
-                    return (
-                      <div className="home-container">
-                       <Link className="hacemos-word" to="servicios" params={routeParams}>
-                          <div>{intlStore.getMessage(intlData, 'word')}</div><TextSwitcher name={changeWord} />
-                        </Link>
-                      </div>
-                    );
-                  }
-              });
-          }
-        };
-
-
+        let isAnyBannerAvailable =
         return (
-          <div className="home-container">
-           <Link className="hacemos-word" to="servicios" params={routeParams}>
-              <div>{intlStore.getMessage(intlData, 'word')}</div><TextSwitcher name={changeWord} />
-            </Link>
-          </div>
+            <div>
+            {this.state.banners.map(function (banner) {
+              if (banner.enabled == true){
+                return (
+                  <div className="homepage__cta">
+                    <div className="homepage__banners">
+                        <Carousel images={this.state.banners.filter(function (banner) {
+                            return banner.body && banner.body.image;
+                        }).map(function (banner) {
+                            return {
+                                src: `//${banner.body.image.url}`,
+                                link: banner.body.link
+                            };
+                        })} />
+                    </div>
+                  </div>
+                );
+              } else {
+                return (
+                  <div className="home-container">
+                   <Link className="hacemos-word" to="servicios" params={routeParams}>
+                      <div>{intlStore.getMessage(intlData, 'word')}</div><TextSwitcher name={changeWord} />
+                    </Link>
+                  </div>
+                );
+              }
+            })}
+
+            </div>
         );
     }
 }

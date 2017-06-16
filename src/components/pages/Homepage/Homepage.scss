@@ -99,3 +99,75 @@
          margin-top: 0;
      }
  }
+
+// home screen
+
+.switcher-container {
+	display: inline-block;
+	font-weight: bold;
+	color: rgb(255, 64, 86); transform: translate3d(-3.785px, -1.65px, 0px);
+	line-height: 1.2;
+	letter-spacing: -.45rem;
+	display: inline-block;
+	padding-left: 0px;
+  @include breakpoint(handhelds) {
+    letter-spacing: -.2rem;
+  }
+}
+
+.homepage-container {
+  text-align: center;
+  min-height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: #2A2C39;
+  background-size:cover;
+  color: #fafafa;
+  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+  font: 900 6.853em Montserrat, Helvetica, Times, serif;
+  letter-spacing: -.45rem;
+  box-sizing: border-box;
+  @include breakpoint(handhelds) {
+    font: 900 3em Montserrat, Helvetica, Times, serif;
+    letter-spacing: -.1rem;
+    justify-content:center;
+    align-items:flex-start;
+  }
+}
+
+.home-container {
+  text-align: center;
+  min-height:100vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  background: url(miniature-image.jpg);
+  background-size:cover;
+  color: #fafafa;
+  text-shadow: -2px 1px rgba(0, 0, 0, 0.1);
+  font: 900 6.853em Montserrat, Helvetica, Times, serif;
+  letter-spacing: -.45rem;
+  box-sizing: border-box;
+  @include breakpoint(handhelds) {
+    font: 900 3em Montserrat, Helvetica, Times, serif;
+    letter-spacing: -.1rem;
+    justify-content:center;
+    align-items:flex-start;
+  }
+}
+
+.hacemos-word {
+  display: flex;
+  text-decoration: none;
+  color: white;
+  flex-direction: row;
+  padding-left: 10px;
+  @include breakpoint(handhelds) {
+    flex-direction: column;
+  }
+}

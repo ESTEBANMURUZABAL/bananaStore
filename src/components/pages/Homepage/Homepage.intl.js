@@ -1,8 +1,10 @@
 export default {
     en: {
-        productsList: 'Featured Products'
+        productsList: 'Featured Products',
+        word: 'We make'
     },
     es: {
-        productsList: 'Productos Destacados'
+        productsList: 'Productos Destacados',
+        word: 'Hacemos'
     }
 };
