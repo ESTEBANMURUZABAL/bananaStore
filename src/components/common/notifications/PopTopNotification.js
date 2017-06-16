@@ -30,7 +30,7 @@ class PopTopNotification extends React.Component {
 
         // Static content
         this.setState({
-           closeImg: require('./close.png')
+           closeImg: require('./cerrar1.png')
         });
     }
 
