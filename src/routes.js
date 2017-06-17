@@ -37,6 +37,7 @@ import SelectCustomPage from './components/pages/SelectPage/Web/SelectCustomPage
 
 //Select page components
 import EditPage from './components/pages/EditPage/EditPage';
+import PropousalPage from './components/pages/PropousalPage/PropousalPage';
 
 import StoresPage from './components/pages/StaticContent/StoresPage';
 import InfoPage from './components/pages/StaticContent/InfoPage';
@@ -95,6 +96,7 @@ const routes = (
         <Route name="select-landing-page" path="select-landing-page" handler={SelectLandingPage} />
 
         <Route name="edit-page" path="edit-page" handler={EditPage} />
+        <Route name="propousal-page" path="propousal-page/:packNum/:templateId/?" handler={PropousalPage} />
 
         <Route name="article" path="articles/:contentId/?" handler={ArticlePage} />
         <Route name="article-slug" path="articles/:contentId/:contentSlug/?" handler={ArticlePage} />

@@ -17,6 +17,12 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
   render() {
     let intlStore = this.context.getStore(IntlStore);
     let routeParams = {locale: intlStore.getCurrentLocale()};
+    let linkParamsTemplate1 = Object.assign({packNum: 'webPack1',templateId: 'template-1'}, routeParams);
+    let linkParamsTemplate2 = Object.assign({packNum: 'webPack1',templateId: 'template-2'}, routeParams);
+    let linkParamsTemplate3 = Object.assign({packNum: 'webPack1',templateId: 'template-3'}, routeParams);
+    let linkParamsTemplate4 = Object.assign({packNum: 'webPack1',templateId: 'template-4'}, routeParams);
+    let linkParamsTemplate5 = Object.assign({packNum: 'webPack1',templateId: 'template-5'}, routeParams);
+    let linkParamsTemplate6 = Object.assign({packNum: 'webPack1',templateId: 'template-6'}, routeParams);
 
     return (
       <div className="select-page__wrapper">
@@ -59,7 +65,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
             	<Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-              <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate1}>Select template</Link>
             </div>
           </div>
 
@@ -69,7 +75,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
              <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-             <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+             <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate2}>Select template</Link>
             </div>
           </div>
 
@@ -79,7 +85,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
               <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-              <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate3}>Select template</Link>
             </div>
           </div>
 
@@ -89,7 +95,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
               <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-              <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate4}>Select template</Link>
             </div>
           </div>
 
@@ -99,7 +105,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
              <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-             <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+             <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate5}>Select template</Link>
             </div>
           </div>
 
@@ -109,7 +115,7 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
           	</figure>
             <div className="case-study__overlay">
               <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-              <Link className="case-study__choose" to="edit-page" params={routeParams}>Select template</Link>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate6}>Select template</Link>
             </div>
           </div>
         </div>
