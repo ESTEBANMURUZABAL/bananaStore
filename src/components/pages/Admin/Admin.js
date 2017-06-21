@@ -63,7 +63,8 @@ class Admin extends React.Component {
             {name: intlStore.getMessage(intlData, 'customers'), to: 'adm-customers'},
             {name: intlStore.getMessage(intlData, 'collections'), to: 'adm-collections'},
             {name: intlStore.getMessage(intlData, 'products'), to: 'adm-products'},
-            {name: intlStore.getMessage(intlData, 'contents'), to: 'adm-contents'}
+            {name: intlStore.getMessage(intlData, 'contents'), to: 'adm-contents'},
+            {name: intlStore.getMessage(intlData, 'services'), to: 'adm-services'}
         ];
 
         // Return

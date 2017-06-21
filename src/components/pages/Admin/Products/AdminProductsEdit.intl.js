@@ -28,6 +28,7 @@ export default {
         back: 'Volver',
         categories: 'Categorias',
         collections: 'Colecciones',
+        currency: 'Currency',
         deleteProductModalTitle: 'Confirma la eliminacion?',
         description: 'Descripción',
         enabled: 'Activo',

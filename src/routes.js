@@ -48,6 +48,8 @@ import ArticlePage from './components/pages/Articles/ArticlePage';
 import Admin from './components/pages/Admin/Admin';
 import AdminCollections from './components/pages/Admin/Collections/AdminCollections';
 import AdminCollectionsEdit from './components/pages/Admin/Collections/AdminCollectionsEdit';
+import AdminServices from './components/pages/Admin/Services/AdminServices';
+import AdminServicesEdit from './components/pages/Admin/Services/AdminServicesEdit';
 import AdminContents from './components/pages/Admin/Contents/AdminContents';
 import AdminContentsEdit from './components/pages/Admin/Contents/AdminContentsEdit';
 import AdminCustomers from './components/pages/Admin/Customers/AdminCustomers';
@@ -104,6 +106,8 @@ const routes = (
             <DefaultRoute name="adm-dashboard" handler={AdminDashboard} />
             <Route name="adm-collections" path="collections" handler={AdminCollections} />
             <Route name="adm-collection-edit" path="collections/:collectionId/?" handler={AdminCollectionsEdit} />
+            <Route name="adm-services" path="services" handler={AdminServices} />
+            <Route name="adm-service-edit" path="services/:serviceId/?" handler={AdminServicesEdit} />
             <Route name="adm-contents" path="contents" handler={AdminContents} />
             <Route name="adm-content-edit" path="contents/:contentId/?" handler={AdminContentsEdit} />
             <Route name="adm-customers" path="customers" handler={AdminCustomers} />

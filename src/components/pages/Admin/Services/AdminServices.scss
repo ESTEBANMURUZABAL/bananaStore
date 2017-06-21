@@ -1,0 +1,61 @@
+@import '../../../../styles/variables.scss';
+
+/*
+ * Header
+ */
+
+.admin-services__header {
+    display: flex;
+}
+
+.admin-services__title {
+    width: 100%;
+    align-self: center;
+}
+
+.admin-services__toolbar {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+}
+
+.admin-services__add-button {
+    width: 130px;
+}
+
+/*
+ * List
+ */
+
+.admin-services__list {
+    margin-top: 30px;
+}
+
+.admin-services__link {
+    & > a {
+        color: $color-primary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.admin-services__labels {
+    display: flex;
+}
+
+.admin-services__label {
+    &:not(:first-child) {
+        margin-left: 5px;
+    }
+}
+
+.admin-services__no-results {
+    margin-top: 30px;
+    padding: 10px;
+    background-color: $color-secondary;
+    border-radius: 4px;
+}

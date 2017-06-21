@@ -10,6 +10,7 @@ import CustomersAPI from './customers';
 import FilesAPI from './files';
 import OrdersAPI from './orders';
 import ProductsAPI from './products';
+import ServicesAPI from './services';
 
 /**
  * Main API wrapper that provides access to all the available resources
@@ -25,6 +26,7 @@ class API {
         this.files = new FilesAPI({options: options.atlas, getAuthToken});
         this.orders = new OrdersAPI({options: options.atlas, getAuthToken});
         this.products = new ProductsAPI({options: options.atlas, getAuthToken});
+        this.services = new ServicesAPI({options: options.atlas, getAuthToken});
     }
 }
 

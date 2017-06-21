@@ -5,7 +5,8 @@ export default {
         dashboard: 'Dashboard',
         orders: 'Orders',
         products: 'Products',
-        customers: 'Customers'
+        customers: 'Customers',
+        services: 'Servicios'
     },
     es: {
         collections: 'Colecciones',
@@ -13,6 +14,7 @@ export default {
         dashboard: 'Dashboard',
         orders: 'Pedidos',
         products: 'Productos',
-        customers: 'Usuarios'
+        customers: 'Usuarios',
+        services: 'Services'
     }
 };

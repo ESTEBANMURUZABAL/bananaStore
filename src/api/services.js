@@ -36,7 +36,7 @@ class ServicesAPI {
     }
 
     /**
-     * Create Service
+     * Create new services
      */
     create(payload) {
         return new Promise((resolve, reject) => {
@@ -46,7 +46,7 @@ class ServicesAPI {
     }
 
     /**
-     * Service collection
+     * services service
      */
     find(params) {
         return new Promise((resolve, reject) => {
@@ -56,16 +56,7 @@ class ServicesAPI {
     }
 
     /**
-     * Delete Service
-     */
-     delete(serviceId) {
-         return new Promise((resolve, reject) => {
-             let request = superagent.delete(`${this.baseUrl}/services/${serviceId}`);
-             this._wrapAndRequest(request, resolve, reject);
-         });
-     }
-    /**
-     * Fetch Service with given ID
+     * Fetch service with given ID
      */
     get(serviceId) {
         return new Promise((resolve, reject) => {
@@ -75,7 +66,17 @@ class ServicesAPI {
     }
 
     /**
-     * Update Service
+     * Fetch all the services
+     */
+    getAll() {
+        return new Promise((resolve, reject) => {
+            let request = superagent.get(`${this.baseUrl}/services`);
+            this._wrapAndRequest(request, resolve, reject);
+        });
+    }
+
+    /**
+     * Update service
      */
     update(serviceId, payload) {
         return new Promise((resolve, reject) => {
@@ -85,19 +86,14 @@ class ServicesAPI {
     }
 
     /**
-     * Upload service information
+     * Delete service
      */
-    upload(resource, file) {
-        return new Promise((resolve, reject) => {
-
-            let formData = new FormData();
-            formData.append('file', file);
-            formData.append('resource', resource);
-
-            let request = superagent.post(`${this.baseUrl}/services/upload`).send(formData);
-            this._wrapAndRequest(request, resolve, reject);
-        });
-    }
+     delete(serviceId) {
+         return new Promise((resolve, reject) => {
+             let request = superagent.delete(`${this.baseUrl}/services/${serviceId}`);
+             this._wrapAndRequest(request, resolve, reject);
+         });
+     }
 }
 
 /**

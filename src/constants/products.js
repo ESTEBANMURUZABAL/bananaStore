@@ -16,7 +16,7 @@ export default keyMirror({
     PRODUCTS_HOMEPAGE: null,
     PRODUCTS_HOMEPAGE_SUCCESS: null,
     PRODUCTS_HOMEPAGE_ERROR: null,
-    
+
     // Delete item
     PRODUCTS_ITEM_DELETE: null,
     PRODUCTS_ITEM_DELETE_SUCCESS: null,
