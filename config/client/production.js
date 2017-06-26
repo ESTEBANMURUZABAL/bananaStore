@@ -10,7 +10,7 @@ export default {
     },
     api: {
         atlas: {
-            baseUrl: 'http://bananacat.co/v1'
+            baseUrl: 'http://localhost:8000/v1'
         }
     },
     googleAnalytics: {

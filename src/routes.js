@@ -29,11 +29,17 @@ import AboutPage from './components/pages/About/AboutPage';
 import ServicesPage from './components/pages/Services/ServicesPage';
 import ContactPage from './components/pages/Contact/ContactPage';
 
-//Select page components
+//Select web pages components
 import SelectAdminPage from './components/pages/SelectPage/Web/SelectAdminPage';
 import SelectEcommercePage from './components/pages/SelectPage/Web/SelectEcommercePage';
 import SelectLandingPage from './components/pages/SelectPage/Web/SelectLandingPage';
 import SelectCustomPage from './components/pages/SelectPage/Web/SelectCustomPage';
+
+//Select mobile pages components
+import SelectAdminMobile from './components/pages/SelectPage/Mobile/SelectAdminMobile';
+import SelectEcommerceMobile from './components/pages/SelectPage/Mobile/SelectEcommerceMobile';
+import SelectLandingMobile from './components/pages/SelectPage/Mobile/SelectLandingMobile';
+import SelectCustomMobile from './components/pages/SelectPage/Mobile/SelectCustomMobile';
 
 //Select page components
 import EditPage from './components/pages/EditPage/EditPage';
@@ -96,6 +102,11 @@ const routes = (
         <Route name="select-custom-page" path="select-custom-page" handler={SelectCustomPage} />
         <Route name="select-ecommerce-page" path="select-ecommerce-page" handler={SelectEcommercePage} />
         <Route name="select-landing-page" path="select-landing-page" handler={SelectLandingPage} />
+
+        <Route name="select-admin-mobile" path="select-admin-mobile" handler={SelectAdminMobile} />
+        <Route name="select-custom-mobile" path="select-custom-mobile" handler={SelectCustomMobile} />
+        <Route name="select-ecommerce-mobile" path="select-ecommerce-mobile" handler={SelectEcommerceMobile} />
+        <Route name="select-landing-mobile" path="select-landing-mobile" handler={SelectLandingMobile} />
 
         <Route name="edit-page" path="edit-page" handler={EditPage} />
         <Route name="propousal-page" path="propousal-page/:packNum/:templateId/?" handler={PropousalPage} />

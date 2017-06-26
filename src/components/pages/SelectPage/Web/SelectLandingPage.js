@@ -23,30 +23,22 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
     let linkParamsTemplate4 = Object.assign({packNum: 'webPack1',templateId: 'template-4'}, routeParams);
     let linkParamsTemplate5 = Object.assign({packNum: 'webPack1',templateId: 'template-5'}, routeParams);
     let linkParamsTemplate6 = Object.assign({packNum: 'webPack1',templateId: 'template-6'}, routeParams);
+    let linkParamsTemplate7 = Object.assign({packNum: 'webPack1',templateId: 'template-7'}, routeParams);
+    let linkParamsTemplate8 = Object.assign({packNum: 'webPack1',templateId: 'template-8'}, routeParams);
+    let linkParamsTemplate9 = Object.assign({packNum: 'webPack1',templateId: 'template-9'}, routeParams);
+    let linkParamsTemplate10 = Object.assign({packNum: 'webPack1',templateId: 'template-10'}, routeParams);
+    let linkParamsTemplate11 = Object.assign({packNum: 'webPack1',templateId: 'template-11'}, routeParams);
+    let linkParamsTemplate12 = Object.assign({packNum: 'webPack1',templateId: 'template-12'}, routeParams);
+    let linkParamsTemplate13 = Object.assign({packNum: 'webPack1',templateId: 'template-13'}, routeParams);
+    let linkParamsTemplate14 = Object.assign({packNum: 'webPack1',templateId: 'template-14'}, routeParams);
+    let linkParamsTemplate15 = Object.assign({packNum: 'webPack1',templateId: 'template-15'}, routeParams);
+    let linkParamsTemplate16 = Object.assign({packNum: 'webPack1',templateId: 'template-16'}, routeParams);
+    let linkParamsTemplate17 = Object.assign({packNum: 'webPack1',templateId: 'template-17'}, routeParams);
+    let linkParamsTemplate18 = Object.assign({packNum: 'webPack1',templateId: 'template-18'}, routeParams);
+
 
     return (
       <div className="select-page__wrapper">
-
-        <div className="indicator-wrapper">
-          <ol className="list-unstyled text-center step-indicator step-indicator-horizontal">
-          <li className="active info">
-            <div className="step">1</div>
-            <div className="caption">Select Template</div>
-          </li>
-          <li className="">
-            <div className="step">2</div>
-            <div className="caption hidden-xs hidden-sm">Style your website</div>
-          </li>
-            <li className="">
-              <div className="step">3</div>
-              <div className="caption hidden-xs hidden-sm">Fullfil content/Images & logo</div>
-            </li>
-            <li className="">
-              <div className="step">4</div>
-              <div className="caption hidden-xs hidden-sm">Confirm and Payment</div>
-            </li>
-          </ol>
-        </div>
 
         <div className="select-page__section-heading">
           <div><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1Name')} locales={intlStore.getCurrentLocale()} /></div>
@@ -55,67 +47,110 @@ export default class SelectLandingPage extends React.Component { // eslint-disab
         <span className="select-page__heading-separator"></span>
 
         <div className="select-page__section-subheading">
-          <div>Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs</div>
+          <div><FormattedMessage message={intlStore.getMessage(intlData, 'webPack1subheading')} locales={intlStore.getCurrentLocale()} /></div>
         </div>
 
         <div className="case-study-gallery">
-          <div className="case-study study1">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template6">
             <div className="case-study__overlay">
-            	<Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/WpdJmW/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate6}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template7">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/zzKYjj/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate7}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template8">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/xqpjoq/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate8}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template15">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/PpEppR/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate15}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template16">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/zZpjQK/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate16}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template17">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="http://clubaestudiantes.com.ar">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate17}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template18">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://nicistore.com/en">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate18}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template1">
+            <div className="case-study__overlay">
+            	<a className="case-study__preview" target="_blank" href="http://konsumer.js.org/gatsby-starter-drunkenblog/">Preview template</a>
               <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate1}>Select template</Link>
             </div>
           </div>
-
-          <div className="case-study study2">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template2">
             <div className="case-study__overlay">
-             <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
+             <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/mWpLYK/">Preview template</a>
              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate2}>Select template</Link>
             </div>
           </div>
-
-          <div className="case-study study3">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template3">
             <div className="case-study__overlay">
-              <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
+               <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/VpyxRr/">Preview template</a>
               <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate3}>Select template</Link>
             </div>
           </div>
-
-          <div className="case-study study4">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template4">
             <div className="case-study__overlay">
-              <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
+              <a className="case-study__preview" target="_blank" href="http://gatsbyjs.github.io/gatsby-starter-documentation/">Preview template</a>
               <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate4}>Select template</Link>
             </div>
           </div>
-
-          <div className="case-study study5">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template5">
             <div className="case-study__overlay">
-             <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
+             <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/wJpjZN/">Preview template</a>
              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate5}>Select template</Link>
             </div>
           </div>
-
-          <div className="case-study study6">
-          	<figure>
-          		<img className="case-study__img" src="http://static.squarespace.com/static/51b79838e4b0b8b55c75cf91/t/51c4b688e4b03003ea9f1a63/1371846281755/Hexxis+Logo+White.png" alt="" />
-          	</figure>
+          <div className="case-study image-template9">
             <div className="case-study__overlay">
-              <Link className="case-study__preview" to="edit-page" params={routeParams}>Preview template</Link>
-              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate6}>Select template</Link>
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/WpdJWB/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate9}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template10">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/Wpdyeq/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate10}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template11">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ettrics/full/WRbGRN/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate11}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template12">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://jaxx2104.github.io/gatsby-starter-bootstrap/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate12}>Select template</Link>
+            </div>
+          </div>
+          <div className="case-study image-template13">
+            <div className="case-study__overlay">
+              <a className="case-study__preview" target="_blank" href="https://codepen.io/ESTEBANMURUZABAL/full/xqpjNq/">Preview template</a>
+              <Link className="case-study__choose" to="propousal-page" params={linkParamsTemplate13}>Select template</Link>
             </div>
           </div>
         </div>

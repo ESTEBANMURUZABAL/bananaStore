@@ -51,7 +51,7 @@ hr {
 }
 /////
 /* Begin Left Contact Page */
-.form-horizontal {
+.propousal-form-horizontal {
   float: right;
   max-width: 400px;
   font-family: 'Lato';
@@ -59,11 +59,11 @@ hr {
 
 }
 
-textarea.form-control {
+textarea.propousal-form-control {
     height: auto;
 }
 
-.form-control {
+.propousal-form-control {
   display: block;
   width: 100%;
   height: 34px;
@@ -83,7 +83,7 @@ textarea.form-control {
   box-sizing: border-box;
 }
 
-.form-group {
+.propousal-form-group {
     margin-bottom: 15px;
 
 }
@@ -92,7 +92,7 @@ textarea.form-control {
     overflow: auto;
 }
 
-.form-control, textarea {
+.propousal-form-control, textarea {
   max-width: 400px;
   background-color: #2A2C39;
   color: #fff;
@@ -100,7 +100,7 @@ textarea.form-control {
 
 }
 
-.send-button {
+.propousal-send-button {
   margin-top: 15px;
   height: 34px;
   width: 400px;
@@ -108,20 +108,20 @@ textarea.form-control {
   transition: all .2s ease-in-out;
 }
 
-.button {
+.propousal-button {
   width: 400px;
   height: 34px;
   transition: all .2s ease-in-out;
 }
 
-.send-text {
+.propousal-send-text {
   display: block;
   margin-top: 10px;
   font: 100 14px 'Lato', sans-serif;
   letter-spacing: 2px;
 }
 
-.button:hover {
+.propousal-button:hover {
   transform: translate3d(0px, -29px, 0px);
 }
 
@@ -321,7 +321,7 @@ button, input, optgroup, select, textarea {
   .section-header {
     font-size: 65px;
   }
-  .direct-propousal-container, .form-horizontal {
+  .direct-propousal-container, .propousal-form-horizontal {
     float: none;
     margin: 10px auto;
   }
@@ -353,7 +353,7 @@ button, input, optgroup, select, textarea {
     margin: 0 auto;
   }
 
-  .form-control, textarea {
+  .propousal-form-control, textarea {
     max-width: 340px;
     margin: 0 auto;
   }
@@ -383,7 +383,7 @@ button, input, optgroup, select, textarea {
 }
 
 @media screen and (max-width: 410px) {
-  .send-button {
+  .propousal-send-button {
     width: 99%;
   }
 }

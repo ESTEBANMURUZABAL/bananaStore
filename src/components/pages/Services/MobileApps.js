@@ -28,6 +28,10 @@ export default class MobileApps extends React.Component {
     const isMonthly = this.state.isMonthly;
     let intlStore = this.context.getStore(IntlStore);
     let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
+    let linkParamsMobile1 = Object.assign({packNum: 'mobilePack1', templateId: 'template-0'}, routeParams);
+    let linkParamsMobile2 = Object.assign({packNum: 'mobilePack2', templateId: 'template-0'}, routeParams);
+    let linkParamsMobile3 = Object.assign({packNum: 'mobilePack3', templateId: 'template-0'}, routeParams);
+    let linkParamsMobile4 = Object.assign({packNum: 'mobilePack4', templateId: 'template-0'}, routeParams);
 
     return (
       <div>
@@ -52,7 +56,7 @@ export default class MobileApps extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature3')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack1Feature4')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/mobilePack1"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="propousal-page" params={linkParamsMobile1}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">
@@ -72,7 +76,7 @@ export default class MobileApps extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack2Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/mobilePack2"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="propousal-page" params={linkParamsMobile2}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">
@@ -92,7 +96,7 @@ export default class MobileApps extends React.Component {
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature5')} locales={intlStore.getCurrentLocale()} /></li>
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack3Feature6')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/mobilePack3"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="propousal-page" params={linkParamsMobile3}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
           <div className="plan">
@@ -107,7 +111,7 @@ export default class MobileApps extends React.Component {
             <ul className="plan-features">
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'mobilePack4Feature1')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="/services/mobilePack4"><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
+            <div className="plan-select"><Link to="propousal-page" params={linkParamsMobile4}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} locales={intlStore.getCurrentLocale()} /></Link></div>
           </div>
 
         </div>

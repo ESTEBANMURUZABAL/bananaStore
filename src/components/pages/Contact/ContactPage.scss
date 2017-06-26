@@ -43,7 +43,7 @@ hr {
 }
 /////
 /* Begin Left Contact Page */
-.form-horizontal {
+.contact-page__form-horizontal {
   float: left;
   max-width: 400px;
   font-family: 'Lato';
@@ -74,7 +74,7 @@ textarea.form-control {
   box-sizing: border-box;
 }
 
-.form-group {
+.contact-page__form-group {
     margin-bottom: 15px;
 
 }
@@ -179,20 +179,20 @@ button, input, optgroup, select, textarea {
 }
 //////
 /* Begin Right Contact Page */
-.direct-contact-container {
+.contact-page__direct-contact-container {
   max-width: 400px;
   float: right;
   margin-top: 5px;
 }
 
 /* Location, Phone, Email Section */
-.contact-list {
+.contact-page__contact-list {
   list-style-type: none;
   margin-left: -30px;
   padding-right: 20px;
 }
 
-.list-item {
+.contact-page__list-item {
   line-height: 4;
   color: #aaa;
 }
@@ -203,15 +203,15 @@ button, input, optgroup, select, textarea {
   color: #bbb;
 }
 
-.place {
+.contact-page__place {
   margin-left: 62px;
 }
 
-.phone {
+.contact-page__phone {
   margin-left: 56px;
 }
 
-.gmail {
+.contact-page__gmail {
   margin-left: 53px;
 }
 
@@ -228,18 +228,18 @@ button, input, optgroup, select, textarea {
 
 
 /* Social Media Icons */
-.social-media-list {
+.contact-page__social-media-list {
   position: relative;
   font-size: 2.3rem;
   text-align: center;
   width: 100%;
 }
 
-.social-media-list li a {
+.contact-page__social-media-list li a {
   color: #fff;
 }
 
-.social-media-list li {
+.contact-page__social-media-list li {
   position: relative;
   top: 0;
   left: -20px;
@@ -256,7 +256,7 @@ button, input, optgroup, select, textarea {
 
 }
 
-.social-media-list li:after {
+.contact-page__social-media-list li:after {
   content: '';
   position: absolute;
   top: 0;
@@ -270,17 +270,17 @@ button, input, optgroup, select, textarea {
   transition: all .2s ease-in-out;
 }
 
-.social-media-list li:hover {
+.contact-page__social-media-list li:hover {
   background-color: #fff;
 }
 
-.social-media-list li:hover:after {
+.contact-page__social-media-list li:hover:after {
   opacity: 1;
   transform: scale(1.15);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
 
-.social-media-list li:hover a {
+.contact-page__social-media-list li:hover a {
   color: #111;
 }
 
@@ -303,20 +303,20 @@ button, input, optgroup, select, textarea {
   .contact-page__section-header {
     font-size: 65px;
   }
-  .direct-contact-container, .form-horizontal {
+  .contact-page__direct-contact-container, .contact-page__form-horizontal {
     float: none;
     margin: 10px auto;
   }
-  .direct-contact-container {
+  .contact-page__direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
   }
-  .social-media-list li {
+  .contact-page__social-media-list li {
     height: 60px;
     width: 60px;
     line-height: 60px;
   }
-  .social-media-list li:after {
+  .contact-page__social-media-list li:after {
     width: 60px;
     height: 60px;
     line-height: 60px;
@@ -330,7 +330,7 @@ button, input, optgroup, select, textarea {
   .contact-page__section-header{
     font-size: 50px;
   }
-  .direct-contact-container, .form-wrapper {
+  .contact-page__direct-contact-container, .form-wrapper {
     float: none;
     margin: 0 auto;
   }
@@ -343,20 +343,20 @@ button, input, optgroup, select, textarea {
   .name, .email, textarea {
     width: 280px;
   }
-  .direct-contact-container {
+  .contact-page__direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
   }
-  .social-media-list {
+  .contact-page__social-media-list {
     left: 0;
   }
-  .social-media-list li {
+  .contact-page__social-media-list li {
     height: 55px;
     width: 55px;
     line-height: 55px;
     font-size: 2rem;
   }
-  .social-media-list li:after {
+  .contact-page__social-media-list li:after {
     width: 55px;
     height: 55px;
     line-height: 55px;

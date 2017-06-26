@@ -21,6 +21,14 @@ export default {
         webPack1Feature3: 'Design from templates',
         webPack1Feature4: 'Custom text/colors',
 
+        webpack1: {
+          name: 'Landing Page',
+          feature1: 'Up to 10 views/pages',
+          feature2: '1 custom form',
+          feature3: 'Design from templates',
+          feature4: 'Custom text/colors'
+        },
+
         webPlanTitlePack2: 'Self Manageable',
         webPack2Feature1: 'Unlimited views/pages',
         webPack2Feature2: 'Self-Editable content',
@@ -41,7 +49,7 @@ export default {
         webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it',
 
         socialTab: 'Social Marketing',
-        socialTitle: 'Social Media',
+        socialTitle: 'Coming Soon!',
         socialContent: 'Manage your entire social lifecycle. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.',
         socialPrice1: 'USD 250',
         socialPrice2: 'USD 450',
@@ -141,7 +149,7 @@ export default {
       webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!',
 
       socialTab: 'Marketing Social',
-      socialTitle: 'Redes sociales',
+      socialTitle: 'Próximamente..',
       socialContent: 'Manejamos tu cartera de redes sociales. From one dashboard you’ll schedule Tweets and Facebook posts, monitor conversations, and more. When you need to prove your social ROI, quickly create and customize ready-to-present analytics reports.',
       socialPrice1: '$ 4000',
       socialPrice2: '$ 7000',

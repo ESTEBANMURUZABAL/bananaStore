@@ -30,6 +30,7 @@ export default class Websites extends React.Component {
     const isMonthly = this.state.isMonthly;
     let intlStore = this.context.getStore(IntlStore);
     let routeParams = {locale: intlStore.getCurrentLocale()}; // Base route params
+    let linkParamsCustom = Object.assign({packNum: 'webPack4', templateId: 'template-0'}, routeParams);
 
     return (
       <div>
@@ -109,7 +110,7 @@ export default class Websites extends React.Component {
             <ul className="plan-features">
               <li><FormattedMessage message={intlStore.getMessage(intlData, 'webPack4Feature1')} locales={intlStore.getCurrentLocale()} /></li>
             </ul>
-            <div className="plan-select"><Link to="select-custom-page" params={routeParams}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
+            <div className="plan-select"><Link to="propousal-page" params={linkParamsCustom}><FormattedMessage message={intlStore.getMessage(intlData, 'selectPlan')} /></Link></div>
           </div>
 
         </div>

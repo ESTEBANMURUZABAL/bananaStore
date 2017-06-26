@@ -96,18 +96,11 @@ class Application extends React.Component {
                 }
             };
         });
-        
+
         let tabs = [
           {
               name: 'Servicios',
               to: 'servicios'
-          },
-          {
-              name: 'Products',
-              to: 'products',
-              params: {
-                  tabSlug: 'products'
-              }
           },
           {
               name: 'Nosotros',

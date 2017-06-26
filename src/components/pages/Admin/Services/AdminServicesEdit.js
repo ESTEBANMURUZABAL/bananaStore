@@ -158,7 +158,8 @@ class AdminServicesEdit extends React.Component {
                         arsprice: parseFloat(service.pricing.arsprice),
                         usdprice: parseFloat(service.pricing.usdprice)
                     },
-                    metadata: service.metadata
+                    metadata: service.metadata,
+                    features: service.features,
                 }
             });
         }
@@ -317,6 +318,17 @@ class AdminServicesEdit extends React.Component {
                                                 value={this.state.service.pricing.arsprice}
                                                 onChange={this.handlePricingChange.bind(null, 'arsprice')}
                                                 error={fieldError('pricing.arsprice')} />
+                                </InlineItems>
+                            </div>
+                            <div className="admin-services-edit__form-item">
+                                <InlineItems label={<FormattedMessage
+                                    message={intlStore.getMessage(intlData, 'features')}
+                                    locales={intlStore.getCurrentLocale()} />}>
+                                    <InputField label={intlStore.getMessage(intlData, 'packName')}
+                                                labelSize="small" labelWeight="normal"
+                                                value={this.state.service.packname}
+                                                onChange={this.handlePricingChange.bind(null, 'packname')}
+                                                error={fieldError('packname')} />
                                 </InlineItems>
                             </div>
                             <div className="admin-service-edit__form-item">
