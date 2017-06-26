@@ -66,20 +66,20 @@ export default class PropousalPage extends React.Component {
 
               <div className="propousal-form-group">
                 <div className="col-sm-12">
-                  <input type="text" className="propousal-form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name"/>
+                  <input type="text" className="propousal-form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name" required/>
                 </div>
               </div>
               <div className="propousal-form-group">
                 <div className="col-sm-12">
-                  <input type="numbers" className="propousal-form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone"/>
+                  <input type="numbers" className="propousal-form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone" required/>
                 </div>
               </div>
               <div className="propousal-form-group">
                 <div className="col-sm-12">
-                  <input type="email" className="propousal-form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email"/>
+                  <input type="email" className="propousal-form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email" required/>
                 </div>
               </div>
-              <textarea className="propousal-form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'propousalMessage')} name="propousalMessage"></textarea>
+              <textarea className="propousal-form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'propousalMessage')} name="propousalMessage" required></textarea>
               <button className="btn btn-primary propousal-send-button" id="submit" type="submit" value="SEND">
                 <div className="propousal-button">
                   <i className="fa fa-paper-plane"></i><span className="propousal-send-text"><FormattedMessage message={intlStore.getMessage(intlData, 'send')} /></span>

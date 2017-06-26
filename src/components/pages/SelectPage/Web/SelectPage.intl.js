@@ -12,14 +12,14 @@ export default {
       send: 'SEND',
 
       webPack1Name: 'Landing Page',
-      webPack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack1subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       webPack1Feature1: 'Up to 10 views/pages',
       webPack1Feature2: '1 custom form',
       webPack1Feature3: 'Design from templates',
       webPack1Feature4: 'Custom text/colors',
 
       webPack2Name: 'Auto-administrable page',
-      webPack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack2subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       webPack2Feature1: 'Unlimited views/pages',
       webPack2Feature2: 'Self-Editable content',
       webPack2Feature3: 'Custom design',
@@ -28,7 +28,7 @@ export default {
       webPack2Feature6: '1 month support',
 
       webPack3Name: 'Online Store',
-      webPack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack3subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       webPack3Feature1: 'Up to 100 products',
       webPack3Feature2: 'Inventory management',
       webPack3Feature3: 'Membership registration',
@@ -37,7 +37,7 @@ export default {
       webPack3Feature6: '3 months support',
 
       webPack4Name: 'Custom Page',
-      webPack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack3subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       webPack4Feature1: 'Tell us your idea of a kickass website and what would you like to have in it. If possible add websites links that you have on mind to take some ideas of.. :)',
 
       socialTab: 'Social Media Management',
@@ -78,14 +78,14 @@ export default {
       mobilePrice4: 'USD ?',
 
       mobilePack1Name: 'Landing Page App',
-      mobilePack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      mobilePack1subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       mobilePack1Feature1: 'Up to 10 views',
       mobilePack1Feature2: '1 custom form',
       mobilePack1Feature3: 'Design from templates',
       mobilePack1Feature4: 'Custom text/colors',
 
       mobilePack2Name: 'Auto-administrable App',
-      mobilePack2subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      mobilePack2subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       mobilePack2Feature1: 'Custom design',
       mobilePack2Feature2: 'Inventory management',
       mobilePack2Feature3: 'Up to 100 productos',
@@ -94,7 +94,7 @@ export default {
       mobilePack2Feature6: 'Unlimited views/pages',
 
       mobilePack3Name: 'Online Store',
-      mobilePack3subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      mobilePack3subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
       mobilePack3Feature1: 'Custom design',
       mobilePack3Feature2: 'Reservation management',
       mobilePack3Feature3: 'Membership registration',
@@ -118,15 +118,15 @@ export default {
       propousalMessage: 'COMENTARIOS Y PREGUNTAS',
       send: 'ENVIAR',
 
-      webPack1Name: 'Landing Page',
-      webPack1subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack1Name: 'Página Simple',
+      webPack1subheading: 'Tenemos más de cincuenta plantillas completamente diferentes, con diseños simples y limplios. Esto es sólo un vistazo de lo que usted puede lograr mediante el uso de cada demo. Compruebe y elija el que se ajuste a sus necesidades',
       webPack1Feature1: 'Hasta 10 vistas/paginas',
       webPack1Feature2: '1 formulario personalizados',
       webPack1Feature3: 'Diseño de plantilla',
       webPack1Feature4: 'Textos/colores personalizados',
 
       webPack2Name: 'Web Auto-administrable',
-      webPack2subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack2subheading: 'Tenemos más de cincuenta plantillas completamente diferentes, con diseños simples y limplios. Esto es sólo un vistazo de lo que usted puede lograr mediante el uso de cada demo. Compruebe y elija el que se ajuste a sus necesidades',
       webPack2Feature1: 'Vistas/paginas ilimitadas',
       webPack2Feature2: 'Auto-administrable',
       webPack2Feature3: 'Diseño personalizado',
@@ -135,7 +135,7 @@ export default {
       webPack2Feature6: '1 mes de soporte',
 
       webPack3Name: 'Tienda online',
-      webPack3subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack3subheading: 'Tenemos más de cincuenta plantillas completamente diferentes, con diseños simples y limplios. Esto es sólo un vistazo de lo que usted puede lograr mediante el uso de cada demo. Compruebe y elija el que se ajuste a sus necesidades',
       webPack3Feature1: 'Hasta 100 productos',
       webPack3Feature2: 'Manejo de inventario',
       webPack3Feature3: 'Registro de usuarios',
@@ -144,7 +144,7 @@ export default {
       webPack3Feature6: '3 meses de soporte',
 
       webPack4Name: 'Página a medida',
-      webPack4subheading: 'Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
+      webPack4subheading: 'Tenemos más de cincuenta plantillas completamente diferentes, con diseños simples y limplios. Esto es sólo un vistazo de lo que usted puede lograr mediante el uso de cada demo. Compruebe y elija el que se ajuste a sus necesidades',
       webPack4Feature1: 'Contanos tu idea de website y que deberia tener/hacer!. Si es posible agregá tambien links de páginas web que tengas en mente para sacar ideas :)',
 
       socialTab: 'Manejo de redes sociales',

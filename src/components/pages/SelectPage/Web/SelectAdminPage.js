@@ -47,7 +47,7 @@ export default class SelectAdminPage extends React.Component { // eslint-disable
         <span className="select-page__heading-separator"></span>
 
         <div className="select-page__section-subheading">
-          <div>Intact features eight completely different, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs</div>
+          <div><FormattedMessage message={intlStore.getMessage(intlData, 'webPack2subheading')} locales={intlStore.getCurrentLocale()} /></div>
         </div>
 
         <div className="case-study-gallery">

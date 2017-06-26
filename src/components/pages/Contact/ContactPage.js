@@ -28,23 +28,23 @@ export default class ContactPage extends React.Component { // eslint-disable-lin
 
              <div className="contact-page__form-group">
                <div className="col-sm-12">
-                 <input type="text" className="form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name"/>
+                 <input type="text" className="form-control" id="name" placeholder={intlStore.getMessage(intlData, 'name')} name="name" required/>
                </div>
              </div>
 
              <div className="contact-page__form-group">
                <div className="col-sm-12">
-                 <input type="numbers" className="form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone"/>
+                 <input type="numbers" className="form-control" id="phone" placeholder={intlStore.getMessage(intlData, 'phone')} name="phone"required />
                </div>
              </div>
 
              <div className="contact-page__form-group">
                <div className="col-sm-12">
-                 <input type="email" className="form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email"/>
+                 <input type="email" className="form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email"required />
                </div>
              </div>
 
-             <textarea className="form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'message')} name="message"></textarea>
+             <textarea className="form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'message')} name="message" required />
 
              <button className="btn btn-primary contact-page__send-button" id="submit" type="submit" value="SEND">
                <div className="contact-page__button">
