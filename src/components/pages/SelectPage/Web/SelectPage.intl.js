@@ -10,6 +10,8 @@ export default {
       subtitle: 'Your package includes:',
       propousalMessage: 'COMMENTS AND INQUIRES',
       send: 'SEND',
+      selectTemplate: 'Select template',
+      previewTemplate: 'Preview template',
 
       webPack1Name: 'Landing Page',
       webPack1subheading: 'We have more than features fifty completely different templates, clean designed demo websites. This is just a glimpse of what you can achive by using the theme. Check and choose the one that suites your needs',
@@ -117,6 +119,8 @@ export default {
       subtitle: 'Tu paquete incluye:',
       propousalMessage: 'COMENTARIOS Y PREGUNTAS',
       send: 'ENVIAR',
+      selectTemplate: 'Seleccionar template',
+      previewTemplate: 'Ver template',
 
       webPack1Name: 'Página Simple',
       webPack1subheading: 'Tenemos más de cincuenta plantillas completamente diferentes, con diseños simples y limplios. Esto es sólo un vistazo de lo que usted puede lograr mediante el uso de cada demo. Compruebe y elija el que se ajuste a sus necesidades',

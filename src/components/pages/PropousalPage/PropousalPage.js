@@ -79,6 +79,11 @@ export default class PropousalPage extends React.Component {
                   <input type="email" className="propousal-form-control" id="email" placeholder={intlStore.getMessage(intlData, 'email')} name="email" required/>
                 </div>
               </div>
+              <div className="propousal-form-group">
+                <div className="col-sm-12">
+                  <input type="text" className="propousal-form-control" id="pack" placeholder={packName + ' ' + templateId} name="pack" disabled/>
+                </div>
+              </div>
               <textarea className="propousal-form-control" rows="10" placeholder={intlStore.getMessage(intlData, 'propousalMessage')} name="propousalMessage" required></textarea>
               <button className="btn btn-primary propousal-send-button" id="submit" type="submit" value="SEND">
                 <div className="propousal-button">
